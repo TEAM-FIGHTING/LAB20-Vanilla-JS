@@ -1,0 +1,29 @@
+/* 공통 레이아웃 */
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+*, :after, :before, legend, td, th {
+  padding: 0;
+}
+
+.header {
+  height: 197px;
+}
+
+.footer {
+  height: 629px;
+}
+
+.header,
+.main,
+.footer {
+  width: 1050px;
+  margin: 0 435px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
