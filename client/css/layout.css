@@ -20,7 +20,7 @@ body {
 .main,
 .footer {
   width: 1050px;
-  margin: 0 435px;
+  margin: 0 auto;
 }
 
 a {
