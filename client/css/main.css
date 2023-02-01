@@ -417,3 +417,173 @@ h1 span {
   font-size: 12px;
   font-weight: 400;
 }
+
+/* 푸터 */
+.main-footer {
+  width: 1050px;
+  height: 521px;
+}
+
+.main-footer-inner {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 28px 0 32px 0;
+}
+
+.happy-center {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  height: 357px;
+}
+
+.happy-center h2 {
+  margin: 0;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.main-number {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+}
+
+.main-number strong {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.main-number p {
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.inquiry {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 16px;
+}
+
+.inquiry-inner {
+  display: flex;
+  flex-flow: row;
+  justify-content: start;
+  align-items: center;
+  gap: 16px;
+  width: 477px;
+  height: 52px;
+}
+
+.inquiry button {
+  background-color: inherit;
+  width: 140px;
+  height: 40px;
+  border: 1px solid var(--gray-200);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.inquiry-inner p {
+  font-size: 13.5px;
+  font-weight: 400;
+  line-height: 25.6px;
+  margin: 0;
+}
+
+.inquiry-email p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19.2px;
+  margin: 0;
+}
+
+.inquiry-email span {
+  color: var(--primary);
+}
+
+.conditions {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  height: 226px;
+}
+
+.conditions-item {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 10px;
+  align-items: center;
+  list-style: none;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  height: 26px;
+}
+
+.contact-network p {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19.2px;
+}
+
+.contact-network span {
+  color: var(--primary);
+}
+
+.sns {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 20px;
+}
+
+.sns img {
+  width: 30px;
+  height: 30px;
+}
+
+.certification-mark {
+  border-top: 1px solid var(--gray-200);
+  padding: 24px 0 32px 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.certification-mark button {
+  border: none;
+  background-color: inherit;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.certification-mark img:nth-child(3) {
+  width: 102px;
+  height: 32px;
+}
+
+.certification-mark p {
+  font-size: 10px;
+  font-weight: 400;
+  text-align: start;
+  line-height: 16px;
+}
+
+.sub-footer {
+  text-align: center;
+  padding: 20px 0 32px 0;
+}
+
+.sub-footer p {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 16px;
+  color: var(--gray-400);
+}
