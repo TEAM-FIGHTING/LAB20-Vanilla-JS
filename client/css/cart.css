@@ -4,9 +4,7 @@
 @import url(./fonts.css);
 @import url(./theme.css);
 
-.header {
-  background-color: coral;
-}
+.header {}
 
 .cart h2 {
   text-align: center;
@@ -235,7 +233,4 @@ input[type="checkbox"]:checked+label {
   color: var(--gray-400);
 }
 
-.footer {
-  background-color: aqua;
-  clear: both;
-}
+.footer {}
