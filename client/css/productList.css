@@ -36,7 +36,8 @@ h3 {
 .accordion__button-text--number,
 .accordion__button-text--init,
 .accordion__item-text--number,
-.accordion-more--text{
+.accordion-more--text,
+.list > li::after{
   color: var(--gray-300);
 }
 
@@ -49,31 +50,17 @@ h3 {
   color: var(--content);
 }
 
-.accordion__item-text--number{
+.accordion__item-text--number,
+.product-info__description{
   font-size: 12px;
 }
 
-.accordion__item-text--name{
+.accordion__item-text--name,
+.accordion__button-text--name,
+.menu {
   font-size: 16px;
 }
 
-.accordion-more{
-  background: none;
-  border-bottom: 1px solid var(--gray-100);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 30px;
-  padding: 0px 0px 12px;
-}
-
-.accordion-more--text{
-  font-weight: 600;
-  font-size: 12.003px;
-  line-height: 150%;
-}
 
 /* -------------------------------------------------------------------------- */
 /*                             navigator accordion                             */
@@ -83,11 +70,6 @@ h3 {
   display: flex;
   flex-direction: column;
 }
-
-.accordion {
-  /* position: relative; */
-}
-
 
 .accordion__button{
   background: none;
@@ -110,7 +92,6 @@ h3 {
 
 .accordion__button-text--name {
   font-weight: 600;
-  font-size: 16px;
   line-height: 150%;
 }
 
@@ -144,7 +125,40 @@ h3 {
   line-height: 150%;
 }
 
+input[type="checkbox"] {
+  display:none;
+}
 
+input[type="checkbox"] + label {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-image: url('../assets/productList/isChecked=false.svg');
+}
+
+input[type="checkbox"]:checked + label {
+  background-image: url('../assets/productList/isChecked=true.svg');
+}
+
+.accordion-more{
+  background: none;
+  border-bottom: 1px solid var(--gray-100);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+  padding: 0px 0px 12px;
+  cursor: pointer;
+}
+
+.accordion-more--text{
+  font-weight: 600;
+  font-size: 12.003px;
+  line-height: 150%;
+}
 
 /* -------------------------------------------------------------------------- */
 /*                                product group                               */
@@ -158,7 +172,6 @@ h3 {
   display: flex;
   justify-content: space-between;
   font-weight: 600;
-  font-size: 16px;
   line-height: 150%;
 }
 
@@ -171,6 +184,22 @@ h3 {
 
 li {
   list-style: none;
+}
+
+
+.list > li::after{
+  content: "|";
+  float: right;
+  display: block;
+  padding: 0 5px;
+  /* margin-right:3px; */
+  font-size: 8px;
+}
+
+.list > li:last-child:after{
+  content: "";
+  padding: 0;
+  /* margin-right: 0; */
 }
 
 button {
@@ -220,14 +249,12 @@ button {
 }
 
 .product-list > img {
-  /* display: grid; */
   position: absolute;
   inset: -100%;
   width: 100%;
   height: 320px;
   margin: auto;
   object-fit: cover;
-  /* z-index: -1; */
 }
 
 .product-info{
@@ -279,7 +306,6 @@ button {
 }
 
 .product-info__description{
-  font-size: 12px;
   line-height: 160%;
 }
 
@@ -310,3 +336,5 @@ button {
   margin: 0 auto;
   padding-top: 24px;
 }
+
+
