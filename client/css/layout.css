@@ -4,7 +4,12 @@ body {
   margin: 0;
 }
 
-*, :after, :before, legend, td, th {
+*,
+:after,
+:before,
+legend,
+td,
+th {
   padding: 0;
 }
 
@@ -20,7 +25,7 @@ body {
 .main,
 .footer {
   width: 1050px;
-  margin: 0 435px;
+  margin: 0 auto;
 }
 
 a {
