@@ -34,6 +34,7 @@
 
 .tangtang-detail {
   width: 400px;
+  height: 514px;
   float: left;
 }
 
@@ -133,6 +134,10 @@
   align-items: flex-end;
 }
 
+.product-info__count img {
+  width: 83px;
+  height: 30px;
+}
 .cross .product-price {
   display: flex;
   justify-content: end;
