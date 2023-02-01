@@ -48,7 +48,7 @@ legend {
   padding-top: 63px;
 }
 
-.wrapper {
+.header__wrapper {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -89,13 +89,13 @@ h1 span {
 }
 
 /* 오른쪽 상단 sub-nav */
-.member-wrap {
+.header__wrapper--member {
   position: absolute;
   right: 0;
   top: 0;
   padding-top: 12px;
 }
-.member {
+.header__wrapper--member__wrapper {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -103,23 +103,23 @@ h1 span {
   margin: 0;
 }
 
-.member li {
+.header__wrapper--member__wrapper li {
   overflow: hidden;
   font-size: 12px;
   font-weight: 400;
 }
-.member span {
+.header__wrapper--member__wrapper span {
   font-size: 10px;
   color: #d9d9d9;
 }
 
-.member li p {
+.header__wrapper--member__wrapper li p {
   float: right;
   font-size: 10px;
   margin: 0;
 }
 
-.sub-wrapper {
+.header__sub-wrapper {
   display: flex;
   flex-flow: row nowrap;
   gap: 170px;
@@ -135,7 +135,7 @@ h1 span {
   padding: 0;
 }
 
-.form-group-input {
+.search-form__inner__input {
   border: none;
   border-radius: 4px;
   width: 365px;
@@ -143,13 +143,13 @@ h1 span {
   padding-left: 20px;
 }
 
-.form-group-input::placeholder {
+.search-form__inner__input::placeholder {
   font-size: 21px;
   font-weight: 400;
   color: var(--gray-400);
 }
 
-.search-button {
+.search-form__inner__button {
   width: 36px;
   height: 36px;
   border: none;
@@ -160,13 +160,14 @@ h1 span {
   transform: translate(50%, -18px);
 }
 
-.container {
+.reservation-wrapper {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   gap: 20px;
 }
 
+/* 카테고리 */
 .navigation {
   display: flex;
   flex-flow: row nowrap;
@@ -175,32 +176,31 @@ h1 span {
   margin-top: 29px;
 }
 
-/* 카테고리 */
 .kategorie {
   font-weight: 600;
 }
 
-.kategorie-item {
+.kategorie__item {
   width: 84px;
   overflow: hidden;
 }
 
-.kategorie-item li {
+.kategorie__item li {
   text-align: left;
 }
 
-.kategorie-item .item {
+.kategorie__item__name {
   background: url("../assets/header/Hamburger.png") no-repeat 0;
   padding-left: 16px;
   width: 84px;
 }
 
-.kategorie-item .item:hover {
+.kategorie__item__name:hover {
   font-weight: 900;
   color: var(--primary);
 }
 
-.sub-menu {
+.kategorie__item__menu {
   width: 247px;
   overflow: hidden;
   margin-top: 24px;
@@ -210,17 +210,17 @@ h1 span {
   border: 1px solid var(--gray-200);
 }
 
-.sub-menu li {
+.kategorie__item__menu li {
   display: block;
   margin: 8px 12px;
 }
 
-.sub-menu a:hover {
+.kategorie__item__menu a:hover {
   font-weight: 900;
   color: var(--primary);
 }
 
-.sub-menu-item1 {
+.kategorie__item1 {
   background: url(../assets/header/menuIcon/Icon.png) no-repeat;
   background-size: 24px;
   width: 81px;
@@ -228,147 +228,147 @@ h1 span {
   padding-left: 32px;
 }
 
-.sub-menu-item2 {
+.kategorie__item2 {
   background: url(../assets/header/menuIcon/Icon-01.png) no-repeat;
   background-size: 24px;
   width: 81px;
   height: 81px;
   padding-left: 32px;
 }
-.sub-menu-item3 {
+.kategorie__item3 {
   background: url(../assets/header/menuIcon/Icon-02.png) no-repeat;
   background-size: 24px;
   width: 81px;
   height: 81px;
   padding-left: 32px;
 }
-.sub-menu-item4 {
+.kategorie__item4 {
   background: url(../assets/header/menuIcon/Icon-03.png) no-repeat;
   background-size: 24px;
   width: 81px;
   height: 81px;
   padding-left: 32px;
 }
-.sub-menu-item5 {
+.kategorie__item5 {
   background: url(../assets/header/menuIcon/Icon-04.png) no-repeat;
   background-size: 24px;
   width: 81px;
   height: 81px;
   padding-left: 32px;
 }
-.sub-menu-item6 {
+.kategorie__item6 {
   background: url(../assets/header/menuIcon/Icon-05.png) no-repeat;
   background-size: 24px;
   width: 81px;
   height: 81px;
   padding-left: 32px;
 }
-.sub-menu-item7 {
+.kategorie__item7 {
   background: url(../assets/header/menuIcon/Icon-06.png) no-repeat;
   background-size: 24px;
   width: 81px;
   height: 81px;
   padding-left: 32px;
 }
-.sub-menu-item8 {
+.kategorie__item8 {
   background: url(../assets/header/menuIcon/Icon-07.png) no-repeat;
   background-size: 24px;
   width: 81px;
   height: 81px;
   padding-left: 32px;
 }
-.sub-menu-item9 {
+.kategorie__item9 {
   background: url(../assets/header/menuIcon/Icon-08.png) no-repeat;
   background-size: 24px;
   width: 81px;
   height: 81px;
   padding-left: 32px;
 }
-.sub-menu-item10 {
+.kategorie__item10 {
   background: url(../assets/header/menuIcon/Icon-09.png) no-repeat;
   background-size: 24px;
   width: 81px;
   height: 81px;
   padding-left: 32px;
 }
-.sub-menu-item11 {
+.kategorie__item11 {
   background: url(../assets/header/menuIcon/Icon-10.png) no-repeat;
   background-size: 24px;
   width: 81px;
   height: 81px;
   padding-left: 32px;
 }
-.sub-menu-item12 {
+.kategorie__item12 {
   background: url(../assets/header/menuIcon/Icon-011.png) no-repeat;
   background-size: 24px;
   width: 81px;
   height: 81px;
   padding-left: 32px;
 }
-.sub-menu-item13 {
+.kategorie__item13 {
   background: url(../assets/header/menuIcon/Icon-012.png) no-repeat;
   background-size: 24px;
   width: 81px;
   height: 81px;
   padding-left: 32px;
 }
-.sub-menu-item14 {
+.kategorie__item14 {
   background: url(../assets/header/menuIcon/Icon-013.png) no-repeat;
   background-size: 24px;
   width: 81px;
   height: 81px;
   padding-left: 32px;
 }
-.sub-menu-item15 {
+.kategorie__item15 {
   background: url(../assets/header/menuIcon/Icon-014.png) no-repeat;
   background-size: 24px;
   width: 81px;
   height: 81px;
   padding-left: 32px;
 }
-.sub-menu-item16 {
+.kategorie__item16 {
   background: url(../assets/header/menuIcon/Icon-015.png) no-repeat;
   background-size: 24px;
   width: 81px;
   height: 81px;
   padding-left: 32px;
 }
-.sub-menu-item17 {
+.kategorie__item17 {
   background: url(../assets/header/menuIcon/Icon-016.png) no-repeat;
   background-size: 24px;
   width: 81px;
   height: 81px;
   padding-left: 32px;
 }
-.sub-menu-item18 {
+.kategorie__item18 {
   background: url(../assets/header/menuIcon/Icon-017.png) no-repeat;
   background-size: 24px;
   width: 81px;
   height: 81px;
   padding-left: 32px;
 }
-.sub-menu-item19 {
+.kategorie__item19 {
   background: url(../assets/header/menuIcon/Icon-018.png) no-repeat;
   background-size: 24px;
   width: 81px;
   height: 81px;
   padding-left: 32px;
 }
-.sub-menu-item20 {
+.kategorie__item20 {
   background: url(../assets/header/menuIcon/Icon-019.png) no-repeat;
   background-size: 24px;
   width: 81px;
   height: 81px;
   padding-left: 32px;
 }
-.sub-menu-item21 {
+.kategorie__item21 {
   background: url(../assets/header/menuIcon/Icon-020.png) no-repeat;
   background-size: 24px;
   width: 81px;
   height: 81px;
   padding-left: 32px;
 }
-.sub-menu-item22 {
+.kategorie__item22 {
   background: url(../assets/header/menuIcon/Icon-021.png) no-repeat;
   background-size: 24px;
   width: 81px;
@@ -376,7 +376,7 @@ h1 span {
   padding-left: 32px;
 }
 
-.menu {
+.navigation__menu {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -387,21 +387,22 @@ h1 span {
   margin: 0;
 }
 
-.menu li {
+.navigation__menu li {
   overflow: hidden;
   width: 150px;
 }
-.menu-item {
+
+.navigation__menu a {
   display: inline-block;
   padding-bottom: 5px;
 }
 
-.menu-item:hover {
+.navigation__menu a:hover {
   border-bottom: 2px solid var(--primary);
   color: var(--primary);
 }
 
-.shipping-button {
+.navigation__button--shipping {
   border: 1px solid var(--gray-300);
   border-radius: 16px;
   width: 105px;
@@ -410,21 +411,22 @@ h1 span {
   background-color: inherit;
   font-size: 12px;
   font-weight: 400;
+  margin-bottom: 10px;
 }
 
-.shipping-button span {
+.navigation__button--shipping span {
   color: var(--primary);
   font-size: 12px;
   font-weight: 400;
 }
 
 /* 푸터 */
-.main-footer {
+.footer__main {
   width: 1050px;
   height: 521px;
 }
 
-.main-footer-inner {
+.footer__main__inner {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -444,7 +446,7 @@ h1 span {
   font-weight: 700;
 }
 
-.main-number {
+.happy-center--number {
   display: flex;
   flex-flow: row nowrap;
   justify-content: start;
@@ -452,24 +454,24 @@ h1 span {
   gap: 8px;
 }
 
-.main-number strong {
+.happy-center--number strong {
   font-size: 28px;
   font-weight: 700;
 }
 
-.main-number p {
+.happy-center--number p {
   font-size: 16px;
   font-weight: normal;
   margin: 0;
 }
 
-.inquiry {
+.happy-center__inquiry {
   display: flex;
   flex-flow: column nowrap;
   gap: 16px;
 }
 
-.inquiry-inner {
+.happy-center__inquiry__inner {
   display: flex;
   flex-flow: row;
   justify-content: start;
@@ -479,7 +481,7 @@ h1 span {
   height: 52px;
 }
 
-.inquiry button {
+.happy-center__inquiry button {
   background-color: inherit;
   width: 140px;
   height: 40px;
@@ -488,21 +490,21 @@ h1 span {
   font-weight: 400;
 }
 
-.inquiry-inner p {
+.happy-center__inquiry__inner p {
   font-size: 13.5px;
   font-weight: 400;
   line-height: 25.6px;
   margin: 0;
 }
 
-.inquiry-email p {
+.happy-center__inquiry--email p {
   font-size: 12px;
   font-weight: 400;
   line-height: 19.2px;
   margin: 0;
 }
 
-.inquiry-email span {
+.happy-center__inquiry--email span {
   color: var(--primary);
 }
 
@@ -513,7 +515,7 @@ h1 span {
   height: 226px;
 }
 
-.conditions-item {
+.conditions__item {
   display: flex;
   flex-flow: row nowrap;
   gap: 10px;
@@ -525,29 +527,29 @@ h1 span {
   height: 26px;
 }
 
-.contact-network p {
+.conditions--contact-network p {
   margin: 0;
   font-size: 12px;
   font-weight: 400;
   line-height: 19.2px;
 }
 
-.contact-network span {
+.conditions--contact-network span {
   color: var(--primary);
 }
 
-.sns {
+.conditions--sns {
   display: flex;
   flex-flow: row nowrap;
   gap: 20px;
 }
 
-.sns img {
+.conditions--sns img {
   width: 30px;
   height: 30px;
 }
 
-.certification-mark {
+.conditions--certification-mark {
   border-top: 1px solid var(--gray-200);
   padding: 24px 0 32px 0;
   display: flex;
@@ -555,7 +557,7 @@ h1 span {
   justify-content: space-between;
 }
 
-.certification-mark button {
+.conditions--certification-mark button {
   border: none;
   background-color: inherit;
   display: flex;
@@ -564,24 +566,24 @@ h1 span {
   gap: 8px;
 }
 
-.certification-mark img:nth-child(3) {
+.conditions--certification-mark img:nth-child(3) {
   width: 102px;
   height: 32px;
 }
 
-.certification-mark p {
+.conditions--certification-mark p {
   font-size: 10px;
   font-weight: 400;
   text-align: start;
   line-height: 16px;
 }
 
-.sub-footer {
+.footer__sub {
   text-align: center;
   padding: 20px 0 32px 0;
 }
 
-.sub-footer p {
+.footer__sub p {
   font-size: 10px;
   font-weight: 400;
   line-height: 16px;

@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/main.js" type="module"></script>
     <title>Document</title>
@@ -24,8 +24,8 @@
 
     <!-- HEADER start -->
     <header class="header">
-      <div class="wrapper">
-        <h1 class="logo">
+      <div class="header__wrapper">
+        <h1 class="header__wrapper--logo">
           <img src="./assets/header/logo.svg" alt="Market Karly" />
           <a href="#">마켓칼리</a>
           <span class="divider" aria-hidden="true">|</span>
@@ -33,8 +33,8 @@
             >뷰티칼리<img src="./assets/header/Vector.png" alt="new contents"
           /></a>
         </h1>
-        <div class="member-wrap">
-          <ul class="member">
+        <div class="header__wrapper--member">
+          <ul class="header__wrapper--member__wrapper">
             <li>
               <a href="#">로그인</a>
             </li>
@@ -50,21 +50,21 @@
           </ul>
         </div>
 
-        <div class="sub-wrapper">
-          <!-- SEARCH FORM start -->
+        <!-- SEARCH FORM start -->
+        <div class="header__sub-wrapper">
           <h2 class="a11y-hidden">검색</h2>
           <form method="POST" action="#" class="search-form">
             <fieldset>
               <legend>검색 폼</legend>
-              <div class="search-form-inner">
+              <div class="search-form__inner">
                 <input
                   type="search"
                   id="search"
-                  class="form-group-input"
+                  class="search-form__inner__input"
                   required
                   placeholder="검색어를 입력해주세요"
                 />
-                <button type="submit" class="search-button">
+                <button type="submit" class="search-form__inner__button">
                   <img src="./assets/header/Search.png" alt="검색 돋보기" />
                 </button>
               </div>
@@ -72,7 +72,7 @@
           </form>
           <!-- SEARCH FORM end -->
 
-          <div class="container">
+          <div class="reservation-wrapper">
             <a href="#"
               ><img src="./assets/header/Location.png" alt="Location" /></a
             ><a href="#"><img src="./assets/header/Heart.png" alt="Heart" /></a
@@ -83,53 +83,61 @@
 
       <!-- KATEGORIE start -->
       <nav class="navigation">
-        <h2 class="a11y-hidden">메인 메뉴</h2>
+        <h2 class="navigation__name a11y-hidden">메인 메뉴</h2>
         <ul class="kategorie">
-          <li class="kategorie-item">
-            <a class="item" href="#">카테고리</a>
-            <ul class="sub-menu">
-              <li><a class="sub-menu-item1" href="#">선물하기</a></li>
-              <li><a class="sub-menu-item2" href="#">채소</a></li>
-              <li><a class="sub-menu-item3" href="#">과일・견과・쌀</a></li>
-              <li><a class="sub-menu-item4" href="#">수산・해산・건어물</a></li>
-              <li><a class="sub-menu-item5" href="#">정육・계란</a></li>
-              <li><a class="sub-menu-item6" href="#">국・반찬・메인요리</a></li>
-              <li><a class="sub-menu-item7" href="#">샐러드・간편식</a></li>
-              <li><a class="sub-menu-item8" href="#">면・양념・오일</a></li>
+          <li class="kategorie__item">
+            <a class="kategorie__item__name" href="#">카테고리</a>
+            <ul class="kategorie__item__menu">
+              <li><a class="kategorie__item1" href="#">선물하기</a></li>
+              <li><a class="kategorie__item2" href="#">채소</a></li>
+              <li><a class="kategorie__item3" href="#">과일・견과・쌀</a></li>
               <li>
-                <a class="sub-menu-item9" href="#">생수・음료・우유・커피</a>
+                <a class="kategorie__item4" href="#">수산・해산・건어물</a>
               </li>
-              <li><a class="sub-menu-item10" href="#">간식・과자・떡</a></li>
+              <li><a class="kategorie__item5" href="#">정육・계란</a></li>
               <li>
-                <a class="sub-menu-item11" href="#">베이커리・치즈・델리</a>
+                <a class="kategorie__item6" href="#">국・반찬・메인요리</a>
               </li>
-              <li><a class="sub-menu-item12" href="#">건강식품</a></li>
-              <li><a class="sub-menu-item13" href="#">와인</a></li>
-              <li><a class="sub-menu-item14" href="#">전통주</a></li>
+              <li><a class="kategorie__item7" href="#">샐러드・간편식</a></li>
+              <li><a class="kategorie__item8" href="#">면・양념・오일</a></li>
               <li>
-                <a class="sub-menu-item15" href="#">생활용품・리빙・캠핑</a>
+                <a class="kategorie__item9" href="#">생수・음료・우유・커피</a>
+              </li>
+              <li><a class="kategorie__item10" href="#">간식・과자・떡</a></li>
+              <li>
+                <a class="kategorie__item11" href="#">베이커리・치즈・델리</a>
+              </li>
+              <li><a class="kategorie__item12" href="#">건강식품</a></li>
+              <li><a class="kategorie__item13" href="#">와인</a></li>
+              <li><a class="kategorie__item14" href="#">전통주</a></li>
+              <li>
+                <a class="kategorie__item15" href="#">생활용품・리빙・캠핑</a>
               </li>
               <li>
-                <a class="sub-menu-item16" href="#">스킨케어・메이크업</a>
+                <a class="kategorie__item16" href="#">스킨케어・메이크업</a>
               </li>
-              <li><a class="sub-menu-item17" href="#">헤어・바디・구강</a></li>
-              <li><a class="sub-menu-item18" href="#">주방용품</a></li>
-              <li><a class="sub-menu-item19" href="#">가전제품</a></li>
-              <li><a class="sub-menu-item20" href="#">반려동물</a></li>
               <li>
-                <a class="sub-menu-item21" href="#">베이비・키즈・완구</a>
+                <a class="kategorie__item17" href="#">헤어・바디・구강</a>
               </li>
-              <li><a class="sub-menu-item22" href="#">여행・티켓</a></li>
+              <li><a class="kategorie__item18" href="#">주방용품</a></li>
+              <li><a class="kategorie__item19" href="#">가전제품</a></li>
+              <li><a class="kategorie__item20" href="#">반려동물</a></li>
+              <li>
+                <a class="kategorie__item21" href="#">베이비・키즈・완구</a>
+              </li>
+              <li><a class="kategorie__item22" href="#">여행・티켓</a></li>
             </ul>
           </li>
         </ul>
-        <ul class="menu">
-          <li><a class="menu-item" href="#">신상품</a></li>
-          <li><a class="menu-item" href="#">베스트</a></li>
-          <li><a class="menu-item" href="#">알뜰쇼핑</a></li>
-          <li><a class="menu-item" href="#">특가/혜택</a></li>
+        <ul class="navigation__menu">
+          <li><a href="#">신상품</a></li>
+          <li><a href="#">베스트</a></li>
+          <li><a href="#">알뜰쇼핑</a></li>
+          <li><a href="#">특가/혜택</a></li>
         </ul>
-        <button class="shipping-button"><span>샛별・낮 </span>배송안내</button>
+        <button class="navigation__button--shipping">
+          <span>샛별・낮 </span>배송안내
+        </button>
       </nav>
       <!-- KATEGORIE end -->
     </header>
@@ -153,16 +161,16 @@
 
     <!-- FOOTER start -->
     <footer class="footer">
-      <div class="main-footer">
-        <div class="main-footer-inner">
+      <div class="footer__main">
+        <div class="footer__main__inner">
           <div class="happy-center">
             <h2>고객행복센터</h2>
-            <div class="main-number">
+            <div class="happy-center--number">
               <strong>1644-1107</strong>
               <p>월~토요일 오전 7시 - 오후 6시</p>
             </div>
-            <div class="inquiry">
-              <div class="inquiry-inner">
+            <div class="happy-center__inquiry">
+              <div class="happy-center__inquiry__inner">
                 <button>카카오톡 문의</button>
                 <div>
                   <p>
@@ -171,7 +179,7 @@
                   </p>
                 </div>
               </div>
-              <div class="inquiry-inner">
+              <div class="happy-center__inquiry__inner">
                 <button>1:1 문의</button>
                 <div>
                   <p>
@@ -180,7 +188,7 @@
                   </p>
                 </div>
               </div>
-              <div class="inquiry-inner">
+              <div class="happy-center__inquiry__inner">
                 <button>대량주문 문의</button>
                 <div>
                   <p>
@@ -190,7 +198,7 @@
                 </div>
               </div>
             </div>
-            <div class="inquiry-email">
+            <div class="happy-center__inquiry--email">
               <p>
                 비회원 문의 : <span>help@karlycorp.com</span><br />
                 비회원 대량주문 문의 : <span>help@karlycorp.com</span>
@@ -198,9 +206,9 @@
             </div>
           </div>
           <div class="conditions">
-            <h2 class="a11y-hidden">세부약관내용</h2>
+            <h2 class="conditions--name a11y-hidden">세부약관내용</h2>
             <div>
-              <ul class="conditions-item">
+              <ul class="conditions__item">
                 <li><a href="#">칼리소개</a></li>
                 <li><a href="#">칼리소개영상</a></li>
                 <li><a href="#">인재채용</a></li>
@@ -209,7 +217,7 @@
                 <li><a href="#">이용안내</a></li>
               </ul>
             </div>
-            <div class="contact-network">
+            <div class="conditions--contact-network">
               <p>
                 법인명 (상호): 주식회사 칼리 | 사업자등록번호 : 261-81-23567 |
                 <span>사업자정보 확인</span>
@@ -228,7 +236,7 @@
                 팩스 : 070 - 7500 - 0698
               </p>
             </div>
-            <div class="sns">
+            <div class="conditions--sns">
               <a href="#"
                 ><img
                   src="./assets/footer/Blog.png"
@@ -253,7 +261,7 @@
             </div>
           </div>
         </div>
-        <div class="certification-mark">
+        <div class="conditions--certification-mark">
           <button>
             <img src="./assets/footer/logo_isms.png" alt="isms 로고" />
             <p>
@@ -295,7 +303,7 @@
           </button>
         </div>
       </div>
-      <div class="sub-footer">
+      <div class="footer__sub">
         <p>
           컬리에서 판매되는 상품 중에는 컬리에 입점한 개별 판매자가 판매하는
           마켓플레이스(오픈마켓) 상품이 포함되어 있습니다.
