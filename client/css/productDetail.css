@@ -323,6 +323,129 @@ iframe {
   font-size: 21px;
 }
 
+/* 상품 후기 */
+
+.review {
+  margin-top: 136px;
+  position: relative;
+}
+
+.review__title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.review-savings {
+  margin-top: 24px;
+  font-weight: 600;
+  color: var(--content);
+  /* line-height: 24px; */
+}
+
+.review-savings li {
+  margin-top: 6px;
+  list-style: inside;
+  color: var(--gray-500);
+  font-size: 12px;
+  padding-left: 5px;
+}
+
+.review-write__button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 155px;
+  height: 44px;
+  border: 0;
+  border-radius: 4px;
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.review__nav {
+  margin-top: 56px;
+  white-space: nowrap;
+}
+
+.review__nav>span {
+  float: left;
+  margin-right: 860px;
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--content);
+  padding-top: 5px;
+}
+
+/* .review__nav button:last-child::before {
+  content: '|';
+} */
+
+.review__nav button {
+  padding: 5px;
+  margin: -3px;
+  font-weight: 600;
+  border: 0;
+  color: var(--gray-300);
+  background-color: var(--white);
+}
+
+.review__nav button>span {
+  margin-right: 10px;
+  /* background-color: yellowgreen; */
+  vertical-align: text-top;
+
+}
+
+.review__nav .on-click {
+  color: var(--content);
+}
+
+
+.review__table {
+  display: flex;
+  flex-flow: column nowrap;
+  border-top: 2px solid var(--gray-500);
+  margin-top: 16px;
+}
+
+.review__list {
+  padding: 17px 0;
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.banner {
+  font-size: 80%;
+  font-weight: 600;
+  margin: 30px;
+  padding: 2px 8px;
+  background-color: var(--gray-100);
+}
+
+.review__list-button {
+  border: 0;
+  background-color: var(--white);
+  color: var(--content);
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.review__empty-img {
+  margin-top: 20px;
+  width: 48px;
+  height: 48px;
+}
+
+.review__list--empty {
+  text-align: center;
+  color: var(--gray-400);
+  font-size: 21px;
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.review__list--empty>p {
+  margin: 20px 0;
+}
 .footer {
   display: flow-root;
 }
