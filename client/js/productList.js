@@ -1,10 +1,13 @@
 
 // import { getNode, getNodes } from '../lib/index.js';
+import { insertLast } from '../lib/dom/insert.js';
 import { getNode, getNodes } from './../lib/dom/getNode.js';
 
+const body = getNode('body')
 const [...buttons] = getNodes('.accordion');
 const [...carts] = getNodes('.cart-icon');
-
+const back = getNode('.back');
+const cancelButton = getNode('.add-cart__button > button')
 
 function handler(e){
   let dv = e.currentTarget;
@@ -26,10 +29,28 @@ for (let button of buttons){
 
 
 function cartHandler(e){
-  let dv = e.currentTarget;
-  console.log(dv);
+
+  back.style.display = 'block';
+  let scroll = scrollY;
+  console.log(scroll);
+  body.style.overflow = 'scroll';
+  body.style.position =  'fixed';
+  body.style.top = `${-scroll}px`
+  body.style.width = '100%';
+  body.style.height = '100%'
+  
 }
 
 for (let cart of carts){
   cart.addEventListener('click', cartHandler)
 }
+
+
+
+function cancelButtonHandler() {
+  back.style.display = 'none';
+  body.style.overflow = 'visible';
+  body.style.position =  'static';
+}
+cancelButton.addEventListener('click', cancelButtonHandler)
+
