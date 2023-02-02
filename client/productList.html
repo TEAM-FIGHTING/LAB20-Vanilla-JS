@@ -8,7 +8,7 @@
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/productList.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="./js/productList.js" type="module"></script>
+  <script defer src="./js/productList.js" type="module"></script>
   <title>Document</title>
 </head>
 
@@ -594,7 +594,7 @@
         <div class="product-list">
           <a href="#" class="product-each"> 
               <img src="./assets/tangtang/thumbnail.jpg" alt="풀무원 탱탱쫄면" />
-              <button class="cart-icon" aria-label="cart-icon"></button>
+              <button class="cart-icon" aria-label="cart-icon" id="show"></button>
               <div class="product-info">
                 <span class="product-info__delivery">샛별배송</span>
                 <span class="product-info__name">[풀무원] 탱탱쫄면 (4개입)</span>
@@ -860,32 +860,34 @@
 
   <footer class="footer"></footer>
   
-  <div class="back" style="display: none;">
-    <div class="pop-up">
-      <div class="add-cart--info">
-        <p class="add-cart--info--name">
-          [풀무원] 탱탱쫄면 (4개입)
-        </p>
-        <div class="add-cart--info--price">
-          <p>4,980원</p>
-          <span><img src="./assets/productList/Product_count.svg" alt="수량 카운트 이미지" /></span>
+  <div class="background" style="display: none;">
+      <div class="pop-up">
+        <div class="add-cart--info">
+          <p class="add-cart--info--name">
+            [풀무원] 탱탱쫄면 (4개입)
+          </p>
+          <div class="add-cart--info--price">
+            <p>4,980원</p>
+            <span><img src="./assets/productList/Product_count.svg" alt="수량 카운트 이미지" /></span>
+          </div>
+          <div class="add-cart--info--frame">
+            <div class="add-cart--info--total">
+              <span class="add-cart--info--total--text">합계</span>
+              <span class="add-cart--info--total--price">4,980원</span>
+            </div>
+            <div class="add-cart--info--save">
+              <span class="add-cart--info--badge">적립</span>
+              <span>구매 시 5원 적립</span>
+            </div>
+          </div>
         </div>
-        <div class="add-cart--info--frame">
-          <div class="add-cart--info--total">
-            <span class="add-cart--info--total--text">합계</span>
-            <span class="add-cart--info--total--price">4,980원</span>
-          </div>
-          <div class="add-cart--info--save">
-            <span class="add-cart--info--badge">적립</span>
-            <span>구매 시 5원 적립</span>
-          </div>
+        <div class="add-cart__button">
+          <button class="add-cart__button--cancel" id="close">취소</button>
+          <button class="add-cart__button--in">장바구니 담기</button>
         </div>
       </div>
-      <div class="add-cart__button">
-        <button class="add-cart__button--cancel">취소</button>
-        <button class="add-cart__button--in">장바구니 담기</button>
-      </div>
-    </div>
   </div>
+
+
 </body>
 </html>
