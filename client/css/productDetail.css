@@ -4,6 +4,9 @@
 @import url(./fonts.css);
 @import url(./theme.css);
 
+body {
+  font-family: 'Noto sans';
+}
 .clearfix {
   *zoom: 1;
 }
@@ -315,7 +318,7 @@ dd[class*="__list-title"] {
   font-weight: 400;
 }
 
-iframe {
+.why-karly__list--container svg {
   margin-top: 56px;
   width: 40px;
   height: 40px;
