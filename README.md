@@ -1,4 +1,4 @@
-# LAB20-Vanilla-JS 마켓칼리
+# LAB20 마켓칼리 바닐라 프로젝트
 
 ![image](https://user-images.githubusercontent.com/107671084/216521326-5bfbe9bb-da13-43c3-b30f-113ad34dd7da.png)
 
