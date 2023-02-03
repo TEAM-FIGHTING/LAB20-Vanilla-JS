@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/signUp.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./js/login.js" type="module"></script>
+  <title>signUp</title>
+</head>
+
+<body>
+  <header class="header"></header>
+  <main class="main">
+    <section class="register-form">
+      <h2 class="register-form__title">회원가입</h2>
+      <form action="" class="register-form__form">
+        <fieldset>
+          <div class="register-form__essential"><p>필수입력사항</p></div>
+          <hr />
+          <legend>회원가입 폼</legend>
+          <ul class="register-form__list">
+            <li>
+              <label class="register-form__label essential"><p>아이디</p></label>
+              <input class="register-form__input" placeholder="아이디를 입력해주세요">
+              <button class="register-form__check-button">중복확인</button>
+            </li>
+            <li>
+              <label class="register-form__label essential"><p>비밀번호</p></label>
+              <input class="register-form__input" placeholder="비밀번호를 입력해주세요">
+            </li>
+            <li>
+              <label class="register-form__label essential"><p>비밀번호 확인</p></label>
+              <input class="register-form__input" placeholder="비밀번호를 한번 더 입력해주세요">
+            </li>
+            <li>
+              <label class="register-form__label essential"><p>이름</p></label>
+              <input class="register-form__input" placeholder="이름을 한번 더 입력해주세요">
+            </li>
+            <li>
+              <label class="register-form__label essential"><p>이메일</p></label>
+              <input class="register-form__input" placeholder="예) marketkarly@karly.com">
+              <button class="register-form__check-button">중복확인</button>
+            </li>
+            <li>
+              <label class="register-form__label essential"><p>휴대폰</p></label>
+              <input class="register-form__input" placeholder="숫자만 입력해주세요">
+              <button class="register-form__check-button">인증번호 받기</button>
+            </li>
+            <li class="register-form__address-container">
+              <label class="register-form__label essential"><p>주소</p></label>
+              <div class="register-form__address-box">
+                <button class="register-form__address-button">주소검색</button>
+                <div>배송지에 따라 상품 정보가 달라질 수 있습니다</div>
+              </div>
+            </li>
+            <li>
+              <label class="register-form__label"><p>성별</p></label>
+              <!-- <span class="genderCheckBox"> -->
+                <div class="register-form__inline-container" >
+                  <div class="register-form__flex-container">
+                <input id="gender-man" type="radio" name="gender" value="남자" /><label for="gender-man">남자</label>
+                <input id="gender-female" type="radio" name="gender" value="여자" /><label for="gender-female">여자</label>
+                <input id="gender-none" type="radio" name="gender" value="선택안함" checked /><label
+                  for="gender-none">선택없음</label>
+                </div>
+              </div>
+              <!-- </span> -->
+            </li>
+            <li>
+              <label class="register-form__label"><p>생년월일</p></label>
+              <div class="register-form__birth-container">
+                <div class="register-form__birth-box">
+                  <input  type="text" placeholder="YYYY" maxlength="4" />
+                  <span aria-hidden="true">/</span>
+                  <input  type="text" placeholder="MM" maxlength="2">
+                  <span aria-hidden="true">/</span>
+                  <input  type="text" placeholder="DD" maxlength="2" />
+                </div>
+              </div>
+            </li>
+            <li>
+              <label class="register-form__label"><p>추가입력 사항</p></label>
+              <div class="register-form__inline-container">
+                <div class="register-form__flex-container">
+                  <input type="radio" name="additional-event" id="recommend-id" /><label for="recommend-id">친구초대 추천인 아이디</label>
+                  <input type="radio"  name="additional-event" id="event" /><label for="event">참여 이벤트명</label>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <hr />
+          <div class="register-form__clearfix">
+            <span class="register-form__agree"><p>이용약관 동의</p></span>
+            <ul class="register-form__terms">
+              <li>
+                <div class="register-form__box">
+                  <input id="full-agree" type="checkbox" />
+                  <label for="full-agree" class="register-form__allConfirm">전체동의합니다</label>
+
+                </div>
+                <div class="register-form__additional-information">선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.</div>
+              </li>
+              <li>
+                <input id="terms-of-use-agree" type="checkbox" />
+                <label for="terms-of-use-agree" class="">이용약관 동의(필수)</label>
+                <span class="register-form__view-terms">약관보기</span>
+              </li>
+              <li>
+                <input id="personal-information-agree" type="checkbox" />
+                <label for="personal-information-agree" class="">개인정보 수집 · 이용 동의(필수)</label>
+                <span class="register-form__view-terms">약관보기</span>
+              </li>
+              <li>
+                <input id="information-agree" type="checkbox" />
+                <label for="information-agree" class="">무료배송, 할인쿠폰 등 혜택/정보 수신 동의(선택)</label>
+                <span class="register-form__view-terms">약관보기</span>
+              </li>
+              <li>
+                <input id="confirm-age" type="checkbox" />
+                <label for="confirm-age" class="">본인은 만 14세 이상입니다.(필수)</label>
+                <span class="register-form__view-terms">약관보기</span>
+              </li>
+            </ul>
+
+          </div>
+          <hr />
+          <button class="register-form__register-button" type="submit">입력</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer"></footer>
+
+
+</body>
+
+</html>
