@@ -6,10 +6,13 @@
 
 * {
   box-sizing: border-box;
+}
+
+body{
   font-family: "Noto Sans";
 }
 
-li {
+main li {
   list-style: none;
   margin: 20px 0;
   height: 44px;
@@ -45,6 +48,7 @@ legend {
   font-size: 21.328px;
   line-height: 150%;
   margin: 0;
+  margin-top: 80px;
 }
 
 .register-form__essential {
