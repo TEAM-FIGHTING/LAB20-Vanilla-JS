@@ -3,6 +3,12 @@
 @import url(./normalize.css);
 @import url(./theme.css);
 
+
+
+body{
+  font-family: "Noto Sans";
+}
+
 .a11y-hidden,
 legend {
   position: absolute;
