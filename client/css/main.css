@@ -182,6 +182,7 @@ h1 span {
 
 .kategorie {
   font-weight: 600;
+  display: none;
 }
 
 .kategorie__item {
