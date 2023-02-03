@@ -52,7 +52,11 @@
 <li>클래스명은 <strong>BEM</strong>방식을 사용합니다</li>
 <li>js파일과 변수의 이름은 <strong>CamelCase</strong>를 사용합니다 </li>
 </ul>
+
+
+## 📏기술 스택
 <div style="display:flex">
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=black"/>
 <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"/>
+<img src="https://img.shields.io/badge/ESLint-4B32C3?style=flat-square&logo=ESLint&logoColor=white"/>
 </div>
