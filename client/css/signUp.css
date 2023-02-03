@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: "Noto Sans";
 }
 
@@ -126,7 +126,7 @@ legend {
   font-size: 12.003px;
   line-height: 160%;
 }
-.register-form__address-button{
+.register-form__address-button {
   padding: 0px;
   width: 333px;
   height: 44px;
@@ -314,7 +314,7 @@ input[type="checkbox"] + label {
   height: auto;
   text-indent: 30px;
   cursor: pointer;
-  background: url("../assets/input/isChecked=false.png") no-repeat ;
+  background: url("../assets/input/isChecked=false.png") no-repeat;
   background-position: 0% 50%;
 }
 
@@ -335,4 +335,5 @@ input[type="checkbox"]:checked + label {
   color: #ffffff;
   display: block;
   margin: 40px auto;
+  /* cursor: default; */
 }

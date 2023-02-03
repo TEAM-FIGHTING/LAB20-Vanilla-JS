@@ -3,7 +3,7 @@
 @import url(./fonts.css);
 @import url(./theme.css);
 
-body{
+body {
   font-family: "Noto Sans";
 }
 
@@ -182,6 +182,7 @@ h1 span {
 
 .kategorie {
   font-weight: 600;
+  display: none;
 }
 
 .kategorie__item {
