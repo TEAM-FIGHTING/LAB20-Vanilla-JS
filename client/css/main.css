@@ -203,11 +203,12 @@ h1 span {
 .kategorie__item__menu {
   width: 247px;
   overflow: hidden;
-  margin-top: 24px;
+  margin-top: 32.7px;
   background-color: #fff;
   position: absolute;
   left: 1%;
   border: 1px solid var(--gray-200);
+  z-index: 10;
 }
 
 .kategorie__item__menu li {
