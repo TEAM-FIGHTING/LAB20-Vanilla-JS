@@ -4,7 +4,12 @@ body {
   margin: 0;
 }
 
-*, :after, :before, legend, td, th {
+*,
+:after,
+:before,
+legend,
+td,
+th {
   padding: 0;
 }
 
