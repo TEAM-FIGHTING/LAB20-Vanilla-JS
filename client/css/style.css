@@ -12,6 +12,7 @@ body{
 .main_banner {
   width: 100%;
   margin: 0 auto;
+  
 }
 
 .swiper-1 {
@@ -36,7 +37,7 @@ body{
 }
 
 .main_banner-button-prev{ 
-  background: url(../assets/main/Icon/Arrow.png) 50% 50% no-repeat;
+  background: url(../assets/main/Icon/Arrow.svg) 50% 50% no-repeat;
   position: absolute;
   top: 50%;
   bottom: 0px;
@@ -49,7 +50,7 @@ body{
 }
 
 .main_banner-button-next{
-  background: url(../assets/main/Icon/Arrow.png)  50% 50% no-repeat;
+  background: url(../assets/main/Icon/Arrow.svg)  50% 50% no-repeat;
   position: absolute;
   top: 50%;
   bottom: 0px;
@@ -66,20 +67,17 @@ body{
   display: none;
 }
 
-.swiper-1__pagination {
-  width: 50px;
-  height: 20px;
+.swiper-pagination {
+  width: 47px;
   position: absolute;
-  left: 73%;
-  top: 80%;
-  bottom: 20px;
+  left: calc(1420 / 1920 * 99%);
+  bottom: 52px;
   border-radius: 30px;
   background: rgba(0, 0, 0, 0.2);
   color: var(--white);
-  font-weight: 300;
+  font-weight: 600;
   padding: 2px 5px;
 }
-
 
 .product_list1, .product_list2 {
   margin:0 auto;
@@ -178,9 +176,9 @@ body{
 }
 
 .product-button-prev1 { 
-  background: url(../assets/main/Icon/Arrow.png) 50% 50% no-repeat;
+  background: url(../assets/main/Icon/Arrow.svg) 50% 50% no-repeat;
   position: absolute;
-  top: 50%;
+  top: 43%;
   bottom: 0px;
   left: -2.5%;
   height: 60px;
@@ -190,7 +188,7 @@ body{
 }
 
 .product-button-next2 {
-  background: url(../assets/main/Icon/Arrow.png) 50% 50% no-repeat;
+  background: url(../assets/main/Icon/Arrow.svg) 50% 50% no-repeat;
   position: absolute;
   top:50%;
   bottom: 0px;
@@ -239,9 +237,9 @@ body{
 }
 
 .product2-button-prev3 { 
-  background: url(../assets/main/Icon/Arrow.png) 50% 50% no-repeat;
+  background: url(../assets/main/Icon/Arrow.svg) 50% 50% no-repeat;
   position: absolute;
-  top: 50%;
+  top: 43%;
   bottom: 0px;
   left: -2.5%;
   height: 60px;
@@ -251,7 +249,7 @@ body{
 }
 
 .product2-button-next4 {
-  background: url(../assets/main/Icon/Arrow.png) 50% 50% no-repeat;
+  background: url(../assets/main/Icon/Arrow.svg) 50% 50% no-repeat;
   position: absolute;
   top:50%;
   bottom: 0px;
@@ -262,4 +260,3 @@ body{
   z-index: 99;
   transform: translateY(-50%) rotate(180deg);
 }
-
