@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/signUp.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./js/login.js" type="module"></script>
+    <script src="./js/idCheck.js" type="module"></script>
+
     <title>signUp</title>
   </head>
 
@@ -159,9 +160,12 @@
                 >
                 <input
                   class="register-form__input"
+                  id="id"
                   placeholder="아이디를 입력해주세요"
                 />
-                <button class="register-form__check-button">중복확인</button>
+                <button class="register-form__check-button" id="checkId">
+                  중복확인
+                </button>
               </li>
               <li>
                 <label class="register-form__label essential"
@@ -169,6 +173,7 @@
                 >
                 <input
                   class="register-form__input"
+                  id="pw"
                   placeholder="비밀번호를 입력해주세요"
                 />
               </li>
@@ -178,6 +183,7 @@
                 >
                 <input
                   class="register-form__input"
+                  id="confirmPw"
                   placeholder="비밀번호를 한번 더 입력해주세요"
                 />
               </li>
@@ -196,9 +202,12 @@
                 >
                 <input
                   class="register-form__input"
+                  id="email"
                   placeholder="예) marketkarly@karly.com"
                 />
-                <button class="register-form__check-button">중복확인</button>
+                <button class="register-form__check-button" id="checkEmail">
+                  중복확인
+                </button>
               </li>
               <li>
                 <label class="register-form__label essential"
