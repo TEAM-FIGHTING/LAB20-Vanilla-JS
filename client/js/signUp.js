@@ -29,8 +29,8 @@ function validate() {
     !(
       !validatePasswordLimitLength(passwordInput.value) &&
       passwordInput.value === confirmPwInput.value &&
-      (emailInput.value.includes(".") == true ||
-        emailInput.value.includes("@") == true) &&
+      emailInput.value.includes(".") == true &&
+      emailInput.value.includes("@") == true &&
       idInput.value &&
       passwordInput.value &&
       confirmPwInput.value &&
