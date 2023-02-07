@@ -19,11 +19,11 @@ export function xhrData({
   url = '',
   method = 'GET',
   body = null,
-  onSuccess = null,
+  // onSuccess = null,
   onFail = null,
   headers = {
     'Content-Type':'application/json',
-    'Access-Control-Allow-Origin': '*',
+    // 'Access-Control-Allow-Origin': '*',
   },
 } = {}){
 
@@ -46,8 +46,7 @@ export function xhrData({
     if(status >= 200 && status < 400){
       if(readyState === 4){
         console.log('통신 성공');
-        
-        onSuccess(JSON.parse(response));
+        console.log(JSON.parse(response));
       }  
     }else{
       // console.error();
