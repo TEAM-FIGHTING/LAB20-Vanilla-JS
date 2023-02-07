@@ -1,27 +1,29 @@
-import { getNode, getNodes } from "./../lib/index.js";
+import { getNode, getNodes} from "./../lib/index.js";
 
 
-const listOfArticle = getNode('.review__list');
-const textOfList = getNode('.review__text');
+let [first, second] = getNodes('.review__list');
+let [one, two] = getNodes('.inquiry__list')
+const list = [first, second];
+const inquiryList = [one, two]
 
 
-
-
-
-
-
-function handlerList() {
-  let none = textOfList.style.display = 'none';
-
-  return () => {
-    if (!none) {
-      textOfList.style.display = 'none';
-    } else {
-      textOfList.style.display = 'block';
-    }
-
-    none = !none;
+function handlerList(e) {
+  let p = e.currentTarget.children[2]
+  
+  if (p.style.display === 'none' || p.style.display === '') {
+    p.style.display = 'block';
+  } else {
+    p.style.display = 'none'
   }
+
 }
 
-listOfArticle.addEventListener('click', handlerList());
+
+
+list.forEach(listIndex => {
+  listIndex.addEventListener('click', handlerList);
+});
+
+inquiryList.forEach(listIndex => {
+  listIndex.addEventListener('click', handlerList);
+});
