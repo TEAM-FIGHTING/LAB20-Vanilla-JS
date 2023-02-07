@@ -3,9 +3,63 @@ import { getNode, getNodes } from "./../lib/dom/getNode.js";
 
 const node = getNodes(".register-form__input");
 const registerBtn = getNode(".register-form__register-button");
+
 const password_node = getNode(".pw");
 const email_node = getNode(".email");
 const confirmPw_node = getNode(".confirmPw");
+
+// 회원가입 버튼 활성화
+const inputId = getNode(".id");
+const inputPw = getNode(".pw");
+const confirmPw = getNode(".confirmPw");
+const name = getNode(".name");
+const email = getNode(".email");
+const phone = getNode(".phone");
+
+if (inputId.value == "" || inputPw.value == "") {
+  registerBtn.disabled = true;
+}
+
+function validate() {
+  if (
+    !(
+      inputId.value &&
+      inputPw.value &&
+      confirmPw.value &&
+      name.value &&
+      email.value &&
+      phone.value
+    )
+  ) {
+    registerBtn.disabled = true;
+  } else {
+    registerBtn.disabled = false;
+    registerBtn.style.cursor = "pointer";
+  }
+
+  if (
+    !(
+      inputId.value &&
+      inputPw.value &&
+      confirmPw.value &&
+      name.value &&
+      email.value &&
+      phone.value
+    )
+  ) {
+    registerBtn.classList.remove("register-button-disabled");
+  } else {
+    registerBtn.classList.add("register-button-disabled");
+  }
+}
+
+inputId.addEventListener("keyup", validate);
+inputPw.addEventListener("keyup", validate);
+confirmPw.addEventListener("keyup", validate);
+name.addEventListener("keyup", validate);
+email.addEventListener("keyup", validate);
+phone.addEventListener("keyup", validate);
+// 회원가입 버튼 활성화 끝
 
 //uniqueID만드는 함수
 const generateRandomString = (num) => {
@@ -20,7 +74,7 @@ const generateRandomString = (num) => {
 
 //xhr 오픈
 const xhr = new XMLHttpRequest();
-xhrData.get("http://localhost:3000/user");
+xhrData.get("http://localhost:3000/users");
 
 function onSubmit() {
   event.preventDefault();
@@ -50,15 +104,18 @@ function onSubmit() {
     return null;
   }
 
+  let pwTrim = pw.trim();
+  let confirmPwTrim = confirmPw.trim();
+
   // 비밀번호 조건 : 8자 이상 입력
-  if (pw.length < 8) {
+  if (pwTrim.length < 8) {
     // throw new Error("비밀번호를 8자 이상 입력하세요");
     alert("비밀번호를 8자 이상 입력하세요");
     password_node.focus();
     return;
   }
 
-  if (pw !== confirmPw) {
+  if (pwTrim !== confirmPwTrim) {
     alert("동일한 비밀번호를 입력하세요");
     confirmPw_node.focus();
     return;
@@ -84,7 +141,7 @@ function onSubmit() {
 }
 
 registerBtn.addEventListener("click", () => {
-  xhr.open("POST", "http://localhost:3000/user");
+  xhr.open("POST", "http://localhost:3000/users");
   xhr.setRequestHeader("Content-Type", "application/json");
   xhr.send(JSON.stringify(onSubmit()));
 });

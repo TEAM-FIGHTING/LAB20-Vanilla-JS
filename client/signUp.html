@@ -12,7 +12,10 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/signUp.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/idCheck.js" type="module"></script>
+    <script src="./js/emailCheck.js" type="module"></script>
     <script src="./js/signUp.js" type="module"></script>
+
     <title>signUp</title>
   </head>
 
@@ -149,14 +152,16 @@
         <h2 class="register-form__title">회원가입</h2>
         <form action="" class="register-form__form">
           <fieldset>
-            <div class="register-form__essential"><p>필수입력사항</p></div>
+            <div class="register-form__essential">
+              <p>필수입력사항</p>
+            </div>
             <hr />
             <legend>회원가입 폼</legend>
             <ul class="register-form__list">
               <li>
-                <label class="register-form__label essential"
-                  ><p>아이디</p></label
-                >
+                <label class="register-form__label essential">
+                  <p>아이디</p>
+                </label>
                 <input
                   class="register-form__input id"
                   placeholder="아이디를 입력해주세요"
@@ -165,9 +170,9 @@
                 <button class="register-form__check-button">중복확인</button>
               </li>
               <li>
-                <label class="register-form__label essential"
-                  ><p>비밀번호</p></label
-                >
+                <label class="register-form__label essential">
+                  <p>비밀번호</p>
+                </label>
                 <input
                   class="register-form__input pw"
                   id="pw"
@@ -177,9 +182,9 @@
                 />
               </li>
               <li>
-                <label class="register-form__label essential"
-                  ><p>비밀번호 확인</p></label
-                >
+                <label class="register-form__label essential">
+                  <p>비밀번호 확인</p>
+                </label>
                 <input
                   class="register-form__input confirmPw"
                   placeholder="비밀번호를 한번 더 입력해주세요"
@@ -188,9 +193,9 @@
                 />
               </li>
               <li>
-                <label class="register-form__label essential"
-                  ><p>이름</p></label
-                >
+                <label class="register-form__label essential">
+                  <p>이름</p>
+                </label>
                 <input
                   class="register-form__input name"
                   placeholder="이름을 한번 더 입력해주세요"
@@ -198,9 +203,9 @@
                 />
               </li>
               <li>
-                <label class="register-form__label essential"
-                  ><p>이메일</p></label
-                >
+                <label class="register-form__label essential">
+                  <p>이메일</p>
+                </label>
                 <input
                   class="register-form__input email"
                   placeholder="예) marketkarly@karly.com"
@@ -210,9 +215,9 @@
                 <button class="register-form__check-button">중복확인</button>
               </li>
               <li>
-                <label class="register-form__label essential"
-                  ><p>휴대폰</p></label
-                >
+                <label class="register-form__label essential">
+                  <p>휴대폰</p>
+                </label>
                 <input
                   class="register-form__input phone"
                   placeholder="숫자만 입력해주세요"
@@ -224,9 +229,9 @@
                 </button>
               </li>
               <li class="register-form__address-container">
-                <label class="register-form__label essential"
-                  ><p>주소</p></label
-                >
+                <label class="register-form__label essential">
+                  <p>주소</p>
+                </label>
                 <div class="register-form__address-box">
                   <button class="register-form__address-button">
                     주소검색
@@ -235,7 +240,9 @@
                 </div>
               </li>
               <li>
-                <label class="register-form__label"><p>성별</p></label>
+                <label class="register-form__label">
+                  <p>성별</p>
+                </label>
                 <!-- <span class="genderCheckBox"> -->
                 <div class="register-form__inline-container">
                   <div class="register-form__flex-container">
@@ -263,7 +270,9 @@
                 <!-- </span> -->
               </li>
               <li>
-                <label class="register-form__label"><p>생년월일</p></label>
+                <label class="register-form__label">
+                  <p>생년월일</p>
+                </label>
                 <div class="register-form__birth-container">
                   <div class="register-form__birth-box">
                     <input type="text" placeholder="YYYY" maxlength="4" />
@@ -275,7 +284,9 @@
                 </div>
               </li>
               <li>
-                <label class="register-form__label"><p>추가입력 사항</p></label>
+                <label class="register-form__label">
+                  <p>추가입력 사항</p>
+                </label>
                 <div class="register-form__inline-container">
                   <div class="register-form__flex-container">
                     <input
@@ -294,7 +305,9 @@
             </ul>
             <hr />
             <div class="register-form__clearfix">
-              <span class="register-form__agree"><p>이용약관 동의</p></span>
+              <span class="register-form__agree">
+                <p>이용약관 동의</p>
+              </span>
               <ul class="register-form__terms">
                 <li>
                   <div class="register-form__box">

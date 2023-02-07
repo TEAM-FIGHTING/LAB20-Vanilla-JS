@@ -9,12 +9,13 @@
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
 
-    <link rel="stylesheet" href="../client/css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./lib/dom/swiper.js" type="module"></script>
+    <script src="./js/main.js" type="module"></script>
 
-    <title>Document</title>
+    <title>main page</title>
   </head>
 
   <body>
@@ -150,13 +151,13 @@
     <section class="main_banner">
       <div class="swiper-container swiper-1">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
+          <div class="swiper-slide swiper-slide-banner">
             <a href="#"><img src="./assets/main/banner05.png" /></a>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide swiper-slide-banner">
             <a href="#"><img src="./assets/main/banner01.png" /></a>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide swiper-slide-banner">
             <a href="#"><img src="./assets/main/banner02.png" /></a>
           </div>
         </div>
@@ -170,7 +171,7 @@
         ></button>
         <div class="swiper-pagination swiper-1__pagination">
           <span class="swiper-pagination-current">1</span>
-          /
+          ""/""
           <span class="swiper-pagination-total">3</span>
         </div>
       </div>
@@ -358,7 +359,7 @@
     <!-- e:product_wrap -->
     <!-- s:middle_banner -->
     <section class="middle_banner">
-      <a href="#"><img src="../client/assets/main/banner03.png" /></a>
+      <a href="#"><img src="./assets/main/banner03.png" alt="중간배너" /></a>
     </section>
     <!-- e:middle_banner -->
     <!-- s:product_wrap2 -->
@@ -542,24 +543,49 @@
       </div>
     </section>
     <!-- e:nav_bar -->
-    <!-- <nav class="nav_bar">
-      <button>
-        <a href=""
-          ><img src="../client/assets/main/Icon/Direction=Right.svg" alt=""
-        /></a>
-      </button>
-      최근 본 상품
-      <div class="nav_bar-img">
-        <ul>
-          <li><span></span></li>
-        </ul>
+    <article class="side-nav">
+      <p class="side-nav__title">최근 본 상품</p>
+      <div class="swiper-container swiper-4">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide swiper-slide__side-nav">
+            <div class="swiper-slide swiper-slide-nav">
+              <img src="./assets/main/product01.png" alt="product1" />
+            </div>
+            <div class="swiper-slide swiper-slide-nav">
+              <img src="./assets/main/product02.png" alt="product2" />
+            </div>
+            <div class="swiper-slide swiper-slide-nav">
+              <img src="./assets/main/product03.png" alt="product3" />
+            </div>
+            <div class="swiper-slide swiper-slide-nav">
+              <img src="./assets/main/product04.png" alt="product4" />
+            </div>
+            <div class="swiper-slide swiper-slide-nav">
+              <img src="./assets/main/product01.png" alt="product5" />
+            </div>
+            <div class="swiper-slide swiper-slide-nav">
+              <img src="./assets/main/product02.png" alt="product6" />
+            </div>
+            <div class="swiper-slide swiper-slide-nav">
+              <img src="./assets/main/product03.png" alt="product7" />
+            </div>
+            <div class="swiper-slide swiper-slide-nav">
+              <img src="./assets/main/product04.png" alt="product8" />
+            </div>
+          </div>
+        </div>
       </div>
-      <button>
-        <a href=""
-          ><img src="../client/assets/main/Icon/Direction=Up.svg" alt=""
-        /></a>
-      </button>
-    </nav> -->
+      <div class="nav_box">
+        <button
+          type="button"
+          class="swiper-button-prev side-nav__bottom-button"
+        ></button>
+        <button
+          type="button"
+          class="swiper-button-next side-nav__top-button"
+        ></button>
+      </div>
+    </article>
     <!-- e:nav_bar -->
 
     <!-- FOOTER start -->
