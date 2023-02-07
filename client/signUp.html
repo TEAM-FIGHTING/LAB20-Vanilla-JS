@@ -12,7 +12,10 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/signUp.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./js/login.js" type="module"></script>
+    <script src="./js/idCheck.js" type="module"></script>
+    <script src="./js/emailCheck.js" type="module"></script>
+    <script src="./js/signUp.js" type="module"></script>
+
     <title>signUp</title>
   </head>
 
@@ -38,11 +41,11 @@
         <div class="header__wrapper--member">
           <ul class="header__wrapper--member__wrapper">
             <li>
-              <a href="#">로그인</a>
+              <a href="./login.html">로그인</a>
             </li>
             <span aria-hidden="true">|</span>
             <li>
-              <a href="#">회원가입</a>
+              <a href="./signUp.html">회원가입</a>
             </li>
             <span aria-hidden="true">|</span>
             <li>
@@ -157,19 +160,26 @@
                 <label class="register-form__label essential"
                   ><p>아이디</p></label
                 >
-                <input
-                  class="register-form__input"
+                <input            
+                  class="register-form__input id"
+                  id="id"
                   placeholder="아이디를 입력해주세요"
+                  required
                 />
-                <button class="register-form__check-button">중복확인</button>
+                <button class="register-form__check-button" id="checkId">
+                  중복확인
+                </button>
               </li>
               <li>
                 <label class="register-form__label essential"
                   ><p>비밀번호</p></label
                 >
-                <input
-                  class="register-form__input"
+                <input                             
+                  class="register-form__input pw"
+                  id="pw"
                   placeholder="비밀번호를 입력해주세요"
+                  type='password'
+                  required
                 />
               </li>
               <li>
@@ -178,7 +188,10 @@
                 >
                 <input
                   class="register-form__input"
+                  id="confirmPw"
                   placeholder="비밀번호를 한번 더 입력해주세요"
+                  type="password"
+                  required
                 />
               </li>
               <li>
@@ -188,6 +201,7 @@
                 <input
                   class="register-form__input"
                   placeholder="이름을 한번 더 입력해주세요"
+                  required
                 />
               </li>
               <li>
@@ -196,9 +210,14 @@
                 >
                 <input
                   class="register-form__input"
+                  id="email"
                   placeholder="예) marketkarly@karly.com"
+                  type="email"
+                  required
                 />
-                <button class="register-form__check-button">중복확인</button>
+                <button class="register-form__check-button" id="checkEmail">
+                  중복확인
+                </button>
               </li>
               <li>
                 <label class="register-form__label essential"
@@ -207,6 +226,8 @@
                 <input
                   class="register-form__input"
                   placeholder="숫자만 입력해주세요"
+                  type="number"
+                  required
                 />
                 <button class="register-form__check-button">
                   인증번호 받기
@@ -328,7 +349,7 @@
               </ul>
             </div>
             <hr />
-            <button class="register-form__register-button" type="submit">
+            <button class="register-form__register-button" type="submit" >
               입력
             </button>
           </fieldset>
