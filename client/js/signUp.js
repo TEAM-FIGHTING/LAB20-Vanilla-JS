@@ -23,7 +23,7 @@ const generateRandomString = (num) => {
 
 //xhr 오픈
 const xhr = new XMLHttpRequest();
-xhrData.get("http://localhost:3000/user");
+xhrData.get("http://localhost:3000/users");
 
 
 function onSubmit(){
@@ -72,7 +72,7 @@ return body
 }
 
 registerBtn.addEventListener("click", () => { 
-      xhr.open("POST", "http://localhost:3000/user");
+      xhr.open("POST", "http://localhost:3000/users");
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.send(JSON.stringify(onSubmit()));
 })
