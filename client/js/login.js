@@ -6,7 +6,7 @@ let id = getNode("#userId");
 // console.log(id)
 
 let pw = getNode("#userPw");
-let response = await tiger.get("http://localhost:3000/user");
+let response = await tiger.get("http://localhost:3000/users");
 
 let userData = response.data;
 // console.log(userData)
