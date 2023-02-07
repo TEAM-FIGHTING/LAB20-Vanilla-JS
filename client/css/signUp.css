@@ -345,7 +345,7 @@ input[type="checkbox"]:checked + label {
 .register-form__register-button {
   width: 340px;
   height: 54px;
-  background: #f0c4ff;
+  background: #ccc;
   border: none;
   border-radius: 4px;
   font-weight: 600;
@@ -354,9 +354,18 @@ input[type="checkbox"]:checked + label {
   color: #ffffff;
   display: block;
   margin: 40px auto;
-  /* cursor: default; */
+  cursor: default;
 }
 
 .register-button-disabled {
-  background-color: #6f3a81;
+  background-color: #5f0080;
+  cursor: pointer;
+}
+
+[class*="validation-text"] {
+  display: block;
+  font-size: 13px;
+  color: rgb(240, 63, 64);
+  margin-top: -4px;
+  margin-left: 143px;
 }

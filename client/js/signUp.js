@@ -4,62 +4,109 @@ import { getNode, getNodes } from "./../lib/dom/getNode.js";
 const node = getNodes(".register-form__input");
 const registerBtn = getNode(".register-form__register-button");
 
-const password_node = getNode(".pw");
-const email_node = getNode(".email");
-const confirmPw_node = getNode(".confirmPw");
+const idInput = getNode(".id");
+const passwordInput = getNode(".pw");
+const confirmPwInput = getNode(".confirmPw");
+const nameInput = getNode(".name");
+const emailInput = getNode(".email");
+const phoneInput = getNode(".phone");
 
-// 회원가입 버튼 활성화
-const inputId = getNode(".id");
-const inputPw = getNode(".pw");
-const confirmPw = getNode(".confirmPw");
-const name = getNode(".name");
-const email = getNode(".email");
-const phone = getNode(".phone");
+const pwValidationText = getNode(".pw-validation-text");
+const confirmPwValidationText = getNode(".confirmPw-validation-text");
+const emailValidationText = getNode(".email-validation-text");
 
-if (inputId.value == "" || inputPw.value == "") {
-  registerBtn.disabled = true;
-}
+idInput.addEventListener("keyup", validate);
+passwordInput.addEventListener("keyup", handleValidatePw);
+confirmPwInput.addEventListener("keyup", validateConfirmPw);
+nameInput.addEventListener("keyup", validate);
+emailInput.addEventListener("keyup", validateEmail);
+phoneInput.addEventListener("keyup", validate);
 
 function validate() {
+  event.preventDefault();
+
   if (
     !(
-      inputId.value &&
-      inputPw.value &&
-      confirmPw.value &&
-      name.value &&
-      email.value &&
-      phone.value
+      !validatePasswordLimitLength(passwordInput.value) &&
+      passwordInput.value === confirmPwInput.value &&
+      (emailInput.value.includes(".") == true ||
+        emailInput.value.includes("@") == true) &&
+      idInput.value &&
+      passwordInput.value &&
+      confirmPwInput.value &&
+      nameInput.value &&
+      emailInput.value &&
+      phoneInput.value
     )
   ) {
     registerBtn.disabled = true;
-  } else {
-    registerBtn.disabled = false;
-    registerBtn.style.cursor = "pointer";
-  }
-
-  if (
-    !(
-      inputId.value &&
-      inputPw.value &&
-      confirmPw.value &&
-      name.value &&
-      email.value &&
-      phone.value
-    )
-  ) {
     registerBtn.classList.remove("register-button-disabled");
   } else {
+    registerBtn.disabled = false;
     registerBtn.classList.add("register-button-disabled");
   }
 }
 
-inputId.addEventListener("keyup", validate);
-inputPw.addEventListener("keyup", validate);
-confirmPw.addEventListener("keyup", validate);
-name.addEventListener("keyup", validate);
-email.addEventListener("keyup", validate);
-phone.addEventListener("keyup", validate);
-// 회원가입 버튼 활성화 끝
+function validatePasswordLimitLength(value, limit = 8) {
+  return value.trim().length < limit;
+}
+
+function handleValidatePw(e) {
+  event.preventDefault();
+  let passwordInputTarget = e.target;
+  // let id = passwordInputTarget.id;
+
+  let key = passwordInputTarget.value;
+
+  passwordInput.setAttribute("value", key);
+  let inputValue = passwordInput.value;
+
+  if (validatePasswordLimitLength(inputValue)) {
+    pwValidationText.innerHTML = "8자리 이상 입력해주세요";
+  } else {
+    pwValidationText.innerHTML = "";
+  }
+
+  validate();
+}
+
+function validateConfirmPw(e) {
+  event.preventDefault();
+  let confirmPwInputTarget = e.target;
+
+  let key = confirmPwInputTarget.value;
+
+  confirmPwInput.setAttribute("value", key);
+  let inputValue = confirmPwInput.value;
+
+  if (passwordInput.value !== inputValue) {
+    confirmPwValidationText.innerHTML = "동일한 비밀번호를 입력하세요";
+  } else {
+    confirmPwValidationText.innerHTML = "";
+  }
+
+  validate();
+}
+
+function validateEmail(e) {
+  let emailInputTarget = e.target;
+
+  let key = emailInputTarget.value;
+
+  emailInput.setAttribute("value", key);
+  let inputValue = emailInput.value;
+
+  if (
+    emailInputTarget.value.includes(".") == false ||
+    emailInputTarget.value.includes("@") == false
+  ) {
+    emailValidationText.innerHTML = "올바른 이메일 양식을 입력하세요";
+  } else {
+    emailValidationText.innerHTML = "";
+  }
+
+  validate();
+}
 
 //uniqueID만드는 함수
 const generateRandomString = (num) => {
@@ -111,20 +158,20 @@ function onSubmit() {
   if (pwTrim.length < 8) {
     // throw new Error("비밀번호를 8자 이상 입력하세요");
     alert("비밀번호를 8자 이상 입력하세요");
-    password_node.focus();
+    passwordInput.focus();
     return;
   }
 
   if (pwTrim !== confirmPwTrim) {
     alert("동일한 비밀번호를 입력하세요");
-    confirmPw_node.focus();
+    confirmPwInput.focus();
     return;
   }
 
   // 이메일 조건 : 최소 `@`, `.` 포함
   if (email.includes(".") == false || email.includes("@") == false) {
     alert("올바른 이메일 양식을 입력하세요");
-    email_node.focus();
+    emailInput.focus();
     return;
   }
 
