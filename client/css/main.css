@@ -3,7 +3,7 @@
 @import url(./fonts.css);
 @import url(./theme.css);
 
-body{
+body {
   font-family: "Noto Sans";
 }
 
@@ -187,7 +187,6 @@ h1 span {
 
 .kategorie {
   font-weight: 600;
-  display: none;
 }
 
 .kategorie__item {
@@ -211,14 +210,20 @@ h1 span {
 }
 
 .kategorie__item__menu {
+  display: none;
   width: 247px;
-  overflow: hidden;
+  height: 500px;
+  overflow: scroll;
   margin-top: 32.7px;
   background-color: #fff;
   position: absolute;
   left: 1%;
   border: 1px solid var(--gray-200);
   z-index: 10;
+}
+
+.kategorie__item__menu::-webkit-scrollbar {
+  display: none;
 }
 
 .kategorie__item__menu li {
