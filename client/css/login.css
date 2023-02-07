@@ -6,6 +6,9 @@
 
 * {
   box-sizing: border-box;
+}
+
+body{
   font-family: "Noto Sans";
 }
 .a11y-hidden,legend,.user-id > label,.user-pw > label {

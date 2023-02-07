@@ -4,6 +4,9 @@
 @import url(./fonts.css);
 @import url(./theme.css);
 
+body{
+  font-family: "Noto Sans";
+}
 .header {}
 
 .cart h2 {

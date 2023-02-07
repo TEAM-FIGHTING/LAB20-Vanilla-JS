@@ -3,6 +3,7 @@ import { getNode, getNodes } from "./../lib/dom/getNode.js";
 
 const node = getNodes(".register-form__input");
 const registerBtn = getNode(".register-form__register-button");
+
 const password_node = getNode(".pw");
 const email_node = getNode(".email");
 const confirmPw_node = getNode(".confirmPw");
@@ -127,3 +128,4 @@ registerBtn.addEventListener("click", () => {
   xhr.setRequestHeader("Content-Type", "application/json");
   xhr.send(JSON.stringify(onSubmit()));
 });
+
