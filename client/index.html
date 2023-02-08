@@ -15,6 +15,7 @@
     <script src="./lib/dom/swiper.js" type="module"></script>
     <script src="./js/main.js" type="module"></script>
     <script src="./js/kategori.js" type="module"></script>
+    <script src="./js/loginCheck.js" type="module"></script>
 
     <title>main page</title>
   </head>
@@ -32,7 +33,7 @@
       <div class="header__wrapper">
         <h1 class="header__wrapper--logo">
           <img src="./assets/header/logo.svg" alt="Market Karly" />
-          <a href="#">마켓칼리</a>
+          <a href="./index.html">마켓칼리</a>
           <span class="divider" aria-hidden="true">|</span>
           <a href="#"
             >뷰티칼리<img src="./assets/header/Vector.png" alt="new contents"
@@ -40,12 +41,15 @@
         </h1>
         <div class="header__wrapper--member">
           <ul class="header__wrapper--member__wrapper">
-            <li>
-              <a href="#">로그인</a>
+            <li class="header__wrapper--member__login">
+              <a href="./login.html">로그인</a>
+            </li>
+            <li class="header__wrapper--member__logout">
+              <a href="#">로그아웃</a>
             </li>
             <span aria-hidden="true">|</span>
             <li>
-              <a href="#">회원가입</a>
+              <a href="./signUp.html">회원가입</a>
             </li>
             <span aria-hidden="true">|</span>
             <li>
@@ -81,7 +85,7 @@
             <a href="#"
               ><img src="./assets/header/Location.png" alt="Location" /></a
             ><a href="#"><img src="./assets/header/Heart.png" alt="Heart" /></a
-            ><a href="#"><img src="./assets/header/Cart.png" alt="Cart" /></a>
+            ><a href="./cart.html"><img src="./assets/header/Cart.png" alt="Cart" /></a>
           </div>
         </div>
       </div>
@@ -137,10 +141,10 @@
           </li>
         </ul>
         <ul class="navigation__menu">
-          <li><a href="#">신상품</a></li>
-          <li><a href="#">베스트</a></li>
-          <li><a href="#">알뜰쇼핑</a></li>
-          <li><a href="#">특가/혜택</a></li>
+          <li><a href="./productList.html">신상품</a></li>
+          <li><a href="./productList.html">베스트</a></li>
+          <li><a href="./productList.html">알뜰쇼핑</a></li>
+          <li><a href="./productList.html">특가/혜택</a></li>
         </ul>
         <button class="navigation__button--shipping">
           <span>샛별・낮 </span>배송안내
@@ -165,10 +169,10 @@
           </li>
         </ul>
         <ul class="navigation__menu">
-          <li><a href="#">신상품</a></li>
-          <li><a href="#">베스트</a></li>
-          <li><a href="#">알뜰쇼핑</a></li>
-          <li><a href="#">특가/혜택</a></li>
+          <li><a href="./productList.html">신상품</a></li>
+          <li><a href="./productList.html">베스트</a></li>
+          <li><a href="./productList.html">알뜰쇼핑</a></li>
+          <li><a href="./productList.html">특가/혜택</a></li>
         </ul>
         <div class="header__sub-wrapper">
           <h2 class="a11y-hidden">검색</h2>
@@ -194,7 +198,7 @@
           <a href="#"
             ><img src="./assets/header/Location.png" alt="Location" /></a
           ><a href="#"><img src="./assets/header/Heart.png" alt="Heart" /></a
-          ><a href="#"><img src="./assets/header/Cart.png" alt="Cart" /></a>
+          ><a href="./cart.html"><img src="./assets/header/Cart.png" alt="Cart" /></a>
         </div>
       </section>
     </nav>
@@ -282,17 +286,17 @@
           <div class="swiper-slide swiper-slide__product">
             <div class="product-box">
               <div class="product-box__img">
-                <a href="#"
+                <a href="./productDetail.html"
                   ><img src="./assets/main/product01.png" alt="풀무원 탱탱쫄면"
                 /></a>
                 <button class="cart-icon"></button>
               </div>
               <div class="product-box__info">
                 <p class="product-box__info-name">
-                  <a href="#">[풀무원] 탱탱쫄면 (4개입)</a>
+                  <a href="./productDetail.html">[풀무원] 탱탱쫄면 (4개입)</a>
                 </p>
                 <p class="product-box__info-price">
-                  <a href="#"><span>4,980원</span></a>
+                  <a href="./productDetail.html"><span>4,980원</span></a>
                 </p>
               </div>
             </div>
@@ -300,7 +304,7 @@
           <div class="swiper-slide">
             <div class="product-box">
               <div class="product-box__img">
-                <a href="#"
+                <a href="./productDetail.html"
                   ><img
                     src="./assets/main/product02.png"
                     alt="온더바디 죠르디 시카 자석 선쿠션"
@@ -309,10 +313,10 @@
               </div>
               <div class="product-box__info">
                 <p class="product-box__info-name">
-                  <a href="#">[온더바디] 죠르디 시카 자석 선쿠션</a>
+                  <a href="./productDetail.html">[온더바디] 죠르디 시카 자석 선쿠션</a>
                 </p>
                 <p class="product-box__info-price">
-                  <a href="#"><span>32,500원</span></a>
+                  <a href="./productDetail.html"><span>32,500원</span></a>
                 </p>
               </div>
             </div>
@@ -320,7 +324,7 @@
           <div class="swiper-slide">
             <div class="product-box">
               <div class="product-box__img">
-                <a href="#"
+                <a href="./productDetail.html"
                   ><img
                     src="./assets/main/product03.png"
                     alt="유기농 밀키퀸 현미 4kg"
@@ -329,10 +333,10 @@
               </div>
               <div class="product-box__info">
                 <p class="product-box__info-name">
-                  <a href="#">유기농 밀키퀸 현미 4kg</a>
+                  <a href="./productDetail.html">유기농 밀키퀸 현미 4kg</a>
                 </p>
                 <p class="product-box__info-price">
-                  <a href="#"><span>32,500원</span></a>
+                  <a href="./productDetail.html"><span>32,500원</span></a>
                 </p>
               </div>
             </div>
@@ -340,7 +344,7 @@
           <div class="swiper-slide">
             <div class="product-box">
               <div class="product-box__img">
-                <a href="#"
+                <a href="./productDetail.html"
                   ><img
                     src="./assets/main/product04.png"
                     alt="프로쉬 베이비 세탁세"
@@ -349,13 +353,13 @@
               </div>
               <div class="product-box__info">
                 <p class="product-box__info-name">
-                  <a href="#">[프로쉬] 베이비 세탁세</a>
+                  <a href="./productDetail.html">[프로쉬] 베이비 세탁세</a>
                 </p>
                 <p class="product-box__info-price">
-                  <a href="#"><span class="percent">24%</span>18,900원</a>
+                  <a href="./productDetail.html"><span class="percent">24%</span>18,900원</a>
                 </p>
                 <p class="product-box__info-discount">
-                  <a href="#"><span class="discount">24,900원</span></a>
+                  <a href="./productDetail.html"><span class="discount">24,900원</span></a>
                 </p>
               </div>
             </div>
@@ -363,17 +367,17 @@
           <div class="swiper-slide swiper-slide__product">
             <div class="product-box">
               <div class="product-box__img">
-                <a href="#"
+                <a href="./productDetail.html"
                   ><img src="./assets/main/product01.png" alt="풀무원 탱탱쫄면"
                 /></a>
                 <button class="cart-icon"></button>
               </div>
               <div class="product-box__info">
                 <p class="product-box__info-name">
-                  <a href="#">[풀무원] 탱탱쫄면 (4개입)</a>
+                  <a href="./productDetail.html">[풀무원] 탱탱쫄면 (4개입)</a>
                 </p>
                 <p class="product-box__info-price">
-                  <a href="#"><span>4,980원</span></a>
+                  <a href="./productDetail.html"><span>4,980원</span></a>
                 </p>
               </div>
             </div>
@@ -381,7 +385,7 @@
           <div class="swiper-slide">
             <div class="product-box">
               <div class="product-box__img">
-                <a href="#"
+                <a href="./productDetail.html"
                   ><img
                     src="./assets/main/product02.png"
                     alt="온더바디 죠르디 시카 자석 선쿠션"
@@ -390,10 +394,10 @@
               </div>
               <div class="product-box__info">
                 <p class="product-box__info-name">
-                  <a href="#">[온더바디] 죠르디 시카 자석 선쿠션</a>
+                  <a href="./productDetail.html">[온더바디] 죠르디 시카 자석 선쿠션</a>
                 </p>
                 <p class="product-box__info-price">
-                  <a href="#"><span>32,500원</span></a>
+                  <a href="./productDetail.html"><span>32,500원</span></a>
                 </p>
               </div>
             </div>
@@ -401,7 +405,7 @@
           <div class="swiper-slide">
             <div class="product-box">
               <div class="product-box__img">
-                <a href="#"
+                <a href="./productDetail.html"
                   ><img
                     src="./assets/main/product03.png"
                     alt="유기농 밀키퀸 현미 4kg"
@@ -410,10 +414,10 @@
               </div>
               <div class="product-box__info">
                 <p class="product-box__info-name">
-                  <a href="#">유기농 밀키퀸 현미 4kg</a>
+                  <a href="./productDetail.html">유기농 밀키퀸 현미 4kg</a>
                 </p>
                 <p class="product-box__info-price">
-                  <a href="#"><span>32,500원</span></a>
+                  <a href="./productDetail.html"><span>32,500원</span></a>
                 </p>
               </div>
             </div>
@@ -421,7 +425,7 @@
           <div class="swiper-slide">
             <div class="product-box">
               <div class="product-box__img">
-                <a href="#"
+                <a href="./productDetail.html"
                   ><img
                     src="./assets/main/product04.png"
                     alt="프로쉬 베이비 세탁세"
@@ -430,13 +434,13 @@
               </div>
               <div class="product-box__info">
                 <p class="product-box__info-name">
-                  <a href="#">[프로쉬] 베이비 세탁세</a>
+                  <a href="./productDetail.html">[프로쉬] 베이비 세탁세</a>
                 </p>
                 <p class="product-box__info-price">
-                  <a href="#"><span class="percent">24%</span>18,900원</a>
+                  <a href="./productDetail.html"><span class="percent">24%</span>18,900원</a>
                 </p>
                 <p class="product-box__info-discount">
-                  <a href="#"><span class="discount">24,900원</span></a>
+                  <a href="./productDetail.html"><span class="discount">24,900원</span></a>
                 </p>
               </div>
             </div>
@@ -468,17 +472,17 @@
           <div class="swiper-slide swiper-slide__product">
             <div class="product-box">
               <div class="product-box__img">
-                <a href="#"
+                <a href="./productDetail.html"
                   ><img src="./assets/main/product01.png" alt="풀무원 탱탱쫄면"
                 /></a>
                 <button type="button" class="cart-icon"></button>
               </div>
               <div class="product-box__info">
                 <p class="product-box__info-name">
-                  <a href="#">[풀무원] 탱탱쫄면 (4개입)</a>
+                  <a href="./productDetail.html">[풀무원] 탱탱쫄면 (4개입)</a>
                 </p>
                 <p class="product-box__info-price">
-                  <a href="#"><span>4,980원</span></a>
+                  <a href="./productDetail.html"><span>4,980원</span></a>
                 </p>
               </div>
             </div>
@@ -486,7 +490,7 @@
           <div class="swiper-slide">
             <div class="product-box">
               <div class="product-box__img">
-                <a href="#"
+                <a href="./productDetail.html"
                   ><img
                     src="./assets/main/product02.png"
                     alt="온더바디 죠르디 시카 자석 선쿠션"
@@ -495,10 +499,10 @@
               </div>
               <div class="product-box__info">
                 <p class="product-box__info-name">
-                  <a href="#">[온더바디] 죠르디 시카 자석 선쿠션</a>
+                  <a href="./productDetail.html">[온더바디] 죠르디 시카 자석 선쿠션</a>
                 </p>
                 <p class="product-box__info-price">
-                  <a href="#"><span>32,500원</span></a>
+                  <a href="./productDetail.html"><span>32,500원</span></a>
                 </p>
               </div>
             </div>
@@ -506,7 +510,7 @@
           <div class="swiper-slide">
             <div class="product-box">
               <div class="product-box__img">
-                <a href="#"
+                <a href="./productDetail.html"
                   ><img
                     src="./assets/main/product03.png"
                     alt="유기농 밀키퀸 현미 4kg"
@@ -515,10 +519,10 @@
               </div>
               <div class="product-box__info">
                 <p class="product-box__info-name">
-                  <a href="#">유기농 밀키퀸 현미 4kg</a>
+                  <a href="./productDetail.html">유기농 밀키퀸 현미 4kg</a>
                 </p>
                 <p class="product-box__info-price">
-                  <a href="#"><span>32,500원</span></a>
+                  <a href="./productDetail.html"><span>32,500원</span></a>
                 </p>
               </div>
             </div>
@@ -526,7 +530,7 @@
           <div class="swiper-slide">
             <div class="product-box">
               <div class="product-box__img">
-                <a href="#"
+                <a href="./productDetail.html"
                   ><img
                     src="./assets/main/product04.png"
                     alt="프로쉬 베이비 세탁세"
@@ -535,13 +539,13 @@
               </div>
               <div class="product-box__info">
                 <p class="product-box__info-name">
-                  <a href="#">[프로쉬] 베이비 세탁세</a>
+                  <a href="./productDetail.html">[프로쉬] 베이비 세탁세</a>
                 </p>
                 <p class="product-box__info-price">
-                  <a href="#"><span class="percent">24%</span>18,900원</a>
+                  <a href="./productDetail.html"><span class="percent">24%</span>18,900원</a>
                 </p>
                 <p class="product-box__info-discount">
-                  <a href="#"><span class="discount">24,900원</span></a>
+                  <a href="./productDetail.html"><span class="discount">24,900원</span></a>
                 </p>
               </div>
             </div>
@@ -549,17 +553,17 @@
           <div class="swiper-slide swiper-slide__product">
             <div class="product-box">
               <div class="product-box__img">
-                <a href="#"
+                <a href="./productDetail.html"
                   ><img src="./assets/main/product01.png" alt="풀무원 탱탱쫄면"
                 /></a>
                 <button type="button" class="cart-icon"></button>
               </div>
               <div class="product-box__info">
                 <p class="product-box__info-name">
-                  <a href="#">[풀무원] 탱탱쫄면 (4개입)</a>
+                  <a href="./productDetail.html">[풀무원] 탱탱쫄면 (4개입)</a>
                 </p>
                 <p class="product-box__info-price">
-                  <a href="#"><span>4,980원</span></a>
+                  <a href="./productDetail.html"><span>4,980원</span></a>
                 </p>
               </div>
             </div>
@@ -567,7 +571,7 @@
           <div class="swiper-slide">
             <div class="product-box">
               <div class="product-box__img">
-                <a href="#"
+                <a href="./productDetail.html"
                   ><img
                     src="./assets/main/product02.png"
                     alt="온더바디 죠르디 시카 자석 선쿠션"
@@ -576,10 +580,10 @@
               </div>
               <div class="product-box__info">
                 <p class="product-box__info-name">
-                  <a href="#">[온더바디] 죠르디 시카 자석 선쿠션</a>
+                  <a href="./productDetail.html">[온더바디] 죠르디 시카 자석 선쿠션</a>
                 </p>
                 <p class="product-box__info-price">
-                  <a href="#"><span>32,500원</span></a>
+                  <a href="./productDetail.html"><span>32,500원</span></a>
                 </p>
               </div>
             </div>
@@ -587,7 +591,7 @@
           <div class="swiper-slide">
             <div class="product-box">
               <div class="product-box__img">
-                <a href="#"
+                <a href="./productDetail.html"
                   ><img
                     src="./assets/main/product03.png"
                     alt="유기농 밀키퀸 현미 4kg"
@@ -596,10 +600,10 @@
               </div>
               <div class="product-box__info">
                 <p class="product-box__info-name">
-                  <a href="#">유기농 밀키퀸 현미 4kg</a>
+                  <a href="./productDetail.html">유기농 밀키퀸 현미 4kg</a>
                 </p>
                 <p class="product-box__info-price">
-                  <a href="#"><span>32,500원</span></a>
+                  <a href="./productDetail.html"><span>32,500원</span></a>
                 </p>
               </div>
             </div>
@@ -607,7 +611,7 @@
           <div class="swiper-slide">
             <div class="product-box">
               <div class="product-box__img">
-                <a href="#"
+                <a href="./productDetail.html"
                   ><img
                     src="./assets/main/product04.png"
                     alt="프로쉬 베이비 세탁세"
@@ -616,13 +620,13 @@
               </div>
               <div class="product-box__info">
                 <p class="product-box__info-name">
-                  <a href="#">[프로쉬] 베이비 세탁세</a>
+                  <a href="./productDetail.html">[프로쉬] 베이비 세탁세</a>
                 </p>
                 <p class="product-box__info-price">
-                  <a href="#"><span class="percent">24%</span>18,900원</a>
+                  <a href="./productDetail.html"><span class="percent">24%</span>18,900원</a>
                 </p>
                 <p class="product-box__info-discount">
-                  <a href="#"><span class="discount">24,900원</span></a>
+                  <a href="./productDetail.html"><span class="discount">24,900원</span></a>
                 </p>
               </div>
             </div>
