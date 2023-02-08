@@ -128,17 +128,26 @@ h1 span {
   margin: 0;
 }
 
+/* 검색 폼 */
 .header__sub-wrapper {
   display: flex;
   flex-flow: row nowrap;
   gap: 170px;
 }
 
-/* 검색 폼 */
 .search-form fieldset {
   position: relative;
   width: 400px;
   height: 60px;
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  padding: 0;
+}
+
+.search-form--sumarry fieldset {
+  position: relative;
+  width: 194px;
+  height: 36px;
   border: 1px solid var(--primary);
   border-radius: 4px;
   padding: 0;
@@ -152,12 +161,25 @@ h1 span {
   padding-left: 20px;
 }
 
+.search-form--summary__inner__input {
+  border: none;
+  border-radius: 4px;
+  width: 150px;
+  height: 30px;
+  padding-left: 20px;
+}
+
 .search-form__inner__input::placeholder {
   font-size: 21px;
   font-weight: 400;
   color: var(--gray-400);
 }
 
+.search-form--summary__inner__input::placeholder {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--gray-400);
+}
 .search-form__inner__button {
   width: 36px;
   height: 36px;
@@ -183,6 +205,25 @@ h1 span {
   justify-content: space-between;
   align-items: center;
   margin-top: 29px;
+}
+
+/* 헤더 글로벌 */
+.navigation--summary {
+  display: none;
+  position: sticky;
+  top: 0;
+  z-index: 100000;
+  background-color: white;
+}
+
+.navigation--summary__container {
+  width: 1050px;
+  margin: 0 auto;
+  padding: 16px 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .kategorie {
@@ -222,7 +263,24 @@ h1 span {
   z-index: 10;
 }
 
+.kategorie__item__menu--sumarry {
+  display: none;
+  width: 247px;
+  height: 500px;
+  overflow: scroll;
+  background-color: #fff;
+  position: sticky;
+  top: 70px;
+  left: 10%;
+  border: 1px solid var(--gray-200);
+  z-index: 1000;
+}
+
 .kategorie__item__menu::-webkit-scrollbar {
+  display: none;
+}
+
+.kategorie__item__menu--sumarry::-webkit-scrollbar {
   display: none;
 }
 
@@ -231,7 +289,17 @@ h1 span {
   margin: 8px 12px;
 }
 
+.kategorie__item__menu--sumarry li {
+  display: block;
+  margin: 8px 12px;
+}
+
 .kategorie__item__menu a:hover {
+  font-weight: 900;
+  color: var(--primary);
+}
+
+.kategorie__item__menu--sumarry a:hover {
   font-weight: 900;
   color: var(--primary);
 }
