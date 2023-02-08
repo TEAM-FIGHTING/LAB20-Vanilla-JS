@@ -324,8 +324,8 @@
       <nav class="navigation">
         <h2 class="a11y-hidden">제품 목차</h2>
         <ul class="product-menu">
-          <li class="menu-item">
-            <button type="button" role="button">상품설명</button>
+          <li class="menu-item on">
+            <button type="button" role="button" onclick="goToScroll('on')">상품설명</button>
           </li>
           <li class="menu-item">
             <button type="button" role="button">상세정보</button>
@@ -561,32 +561,32 @@
             <button class="review__list-button" type="button" role="button">
               금주의 베스트 후기 안내
             </button>
+            <p class="review__text">
+              [금주의 Best 후기 안내]</br>베스트 후기</br> 1) 선정 건 수 : 일주일 최대 100건</br>
+              2) 혜택 선정 시 적립금 5,000원</br> 3) 지급 일시 : 매주 수요일(지급일이 공휴일의 경우 전 영업일)</br>
+              *당첨 ID 및 그 주의 Best 후기는 후기 게시판에서 확인하실 수 있습니다.
+            </p>
           </li>
-          <p class="review__text">
-            [금주의 Best 후기 안내]</br>베스트 후기</br> 1) 선정 건 수 : 일주일 최대 100건</br>
-            2) 혜택 선정 시 적립금 5,000원</br> 3) 지급 일시 : 매주 수요일(지급일이 공휴일의 경우 전 영업일)</br>
-            *당첨 ID 및 그 주의 Best 후기는 후기 게시판에서 확인하실 수 있습니다.
-          </p>
           <li class="review__list">
             <span class="badge notice__badge">공지</span>
             <button class="review__list-button" type="button" role="button">
               상품 후기 적립금 정책 안내
             </button>
+            <p class="review__text">
+              [상품 후기 적립금 정책 변경 안내]</br> 고객님 안녕하세요. 칼리입니다.</br>
+              적립금 지급 정책을 안내드리니 칼리 이용에 참고 부탁드립니다.</br>
+              ■적립금 지급 안내 ■ </br> 1. 일반 후기 -글 후기 50원/건 -사진 후기
+              100원/건 </br> *퍼플/더퍼플 러버스 고객님께서는 더블 후기 적립금이 지급됩니다.</br>
+              *지급에 영업일 기준 1~2일 소요됩니다. </br> 3. 상품 후기게시판(Product review) 적립금 지급 유의 사항 칼리는 믿을 수 있는 후기문화를 함께 만들어가고자 합니다.</br>
+              따라서 후기 내용이 아래에 해당하는 경우에는 검토 후 삭제 및 적립금 회수 조치될 수 있습니다.</br>
+              1. 욕설, 폭력성, 음란성, 상업성 등 업체나 타인에게 불쾌한 내용을 작성한 경우</br>
+              2. 구매한 상품과 무관한 내용이나 동일 문자/단순 초성의 반복 등 부적합한 내용을 작성한 경우</br>
+              3. 상품의 기능이나 효과 등에 오해의 소지가 있는 내용을 작성한 경우</br>
+              4. 저작권, 초상권 등 타인의 권리를 침해하는 이미지, 동영상을 사용한 경우</br>
+              5. 구매한 상품이 아닌 캡쳐 사진, 포장 박스 사진 등 상품과 관련 없는 이미지, 동영상을 사용한 경우 </br>
+              또한, 비정상적인 방법을 통해 후기를 작성하고 적립금을 취득한 경우 작성자에 법적 책임의 소지가 있음을 알려드립니다.
+            </p>
           </li>
-          <p class="review__text">
-            [상품 후기 적립금 정책 변경 안내]</br> 고객님 안녕하세요. 칼리입니다.</br>
-            적립금 지급 정책을 안내드리니 칼리 이용에 참고 부탁드립니다.</br>
-            ■적립금 지급 안내 ■ </br> 1. 일반 후기 -글 후기 50원/건 -사진 후기
-            100원/건 </br> *퍼플/더퍼플 러버스 고객님께서는 더블 후기 적립금이 지급됩니다.</br>
-            *지급에 영업일 기준 1~2일 소요됩니다. </br> 3. 상품 후기게시판(Product review) 적립금 지급 유의 사항 칼리는 믿을 수 있는 후기문화를 함께 만들어가고자 합니다.</br>
-            따라서 후기 내용이 아래에 해당하는 경우에는 검토 후 삭제 및 적립금 회수 조치될 수 있습니다.</br>
-            1. 욕설, 폭력성, 음란성, 상업성 등 업체나 타인에게 불쾌한 내용을 작성한 경우</br>
-            2. 구매한 상품과 무관한 내용이나 동일 문자/단순 초성의 반복 등 부적합한 내용을 작성한 경우</br>
-            3. 상품의 기능이나 효과 등에 오해의 소지가 있는 내용을 작성한 경우</br>
-            4. 저작권, 초상권 등 타인의 권리를 침해하는 이미지, 동영상을 사용한 경우</br>
-            5. 구매한 상품이 아닌 캡쳐 사진, 포장 박스 사진 등 상품과 관련 없는 이미지, 동영상을 사용한 경우 </br>
-            또한, 비정상적인 방법을 통해 후기를 작성하고 적립금을 취득한 경우 작성자에 법적 책임의 소지가 있음을 알려드립니다.
-          </p>
           <li class="review__list--empty">
             <img
               class="review__empty-img"
@@ -633,6 +633,7 @@
             </button>
           </li>
           <li class="inquiry__list">
+            <span></span>
             <button class="inquiry__list-button" type="button" role="button">
               <span>팩이 터져서 왔어요.</span>
               <span>칼리</span>
