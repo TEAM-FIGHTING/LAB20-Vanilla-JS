@@ -27,3 +27,34 @@ list.forEach(listIndex => {
 inquiryList.forEach(listIndex => {
   listIndex.addEventListener('click', handlerList);
 });
+
+
+// 메뉴버튼 클릭
+let [productNotice, detailNotice, review, inquiry] = getNodes('.menu-item');
+
+const menuItem = [productNotice, detailNotice, review, inquiry]
+
+
+
+
+
+
+
+
+
+// menuItem.addEventListener('click', handlerMenu)
+
+
+// 버튼 스크롤 이동
+let menuButton = getNode('.menu-item');
+console.log(menuButton);
+
+
+function goToScroll(name) {
+  let location = name.offset;
+  window.scrollTo({ top: location, behavior: 'smooth' });
+}
+
+
+menuButton.addEventListener('click', goToScroll(menuButton));
+console.log(menuButton);

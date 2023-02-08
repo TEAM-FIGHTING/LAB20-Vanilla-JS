@@ -202,6 +202,9 @@ body {
 /* 네비게이션 */
 .navigation {
   margin-top: 48px;
+  position: sticky;
+    top: 0px;
+    z-index: 1000;
 }
 
 .product-menu {
@@ -215,10 +218,10 @@ body {
   width: calc(1050px / 4);
   font-weight: 600;
   border: 1px solid var(--gray-300);
-
+  color: var(--content);
 }
 
-.product-menu li:first-child button {
+.menu-item.on button {
   border: 1px solid var(--gray-200);
   border-bottom: 0px;
   background-color: var(--white);
