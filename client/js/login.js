@@ -22,6 +22,7 @@ loginButton.addEventListener("click", (e) => {
     if (pwValue == userObj.pw) {
       alert("로그인완료");
       localStorage.setItem("uniqueId", userObj.uniqueId);
+      location.href = 'index.html';
     } else {
       alert("비밀번호를 확인하세요");
     }
