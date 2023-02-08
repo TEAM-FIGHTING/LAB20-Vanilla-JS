@@ -5,7 +5,7 @@
 @import url(./theme.css);
 
 body {
-  font-family: 'Noto sans';
+  font-family: "Noto sans";
 }
 .clearfix {
   *zoom: 1;
@@ -14,7 +14,7 @@ body {
 .clearfix::before,
 .clearfix::after {
   display: block;
-  content: '';
+  content: "";
   line-height: 0;
 }
 
@@ -31,7 +31,6 @@ body {
   overflow: hidden;
   clip-path: polygon(0 0, 0 0, 0 0);
 }
-
 
 /* 제품 기본 정보 */
 
@@ -51,7 +50,7 @@ body {
   margin-bottom: 100px;
 }
 
-.product-order__mainInfo>span {
+.product-order__mainInfo > span {
   color: var(--gray-500);
   font-weight: 700;
   font-size: 20px;
@@ -78,7 +77,7 @@ body {
   text-indent: 4px;
 }
 
-.product-price>span:first-child {
+.product-price > span:first-child {
   font-size: 30px;
 }
 
@@ -97,13 +96,13 @@ body {
   line-height: 18px;
 }
 
-.product-info>div {
+.product-info > div {
   border-top: 1px solid var(--gray-100);
   font-size: 12px;
   padding: 16px 0;
 }
 
-.product-info>div:last-child {
+.product-info > div:last-child {
   border-bottom: 1px solid var(--gray-100);
   margin-bottom: 28px;
 }
@@ -114,7 +113,7 @@ body {
   padding: 4px;
 }
 
-.product-info dd:nth-child(n+3) {
+.product-info dd:nth-child(n + 3) {
   color: var(--gray-400);
 }
 
@@ -144,10 +143,9 @@ body {
 .cross .product-price {
   display: flex;
   justify-content: end;
-
 }
 
-.cross .product-price>span:first-child {
+.cross .product-price > span:first-child {
   margin-left: 17px;
 }
 
@@ -203,8 +201,8 @@ body {
 .navigation {
   margin-top: 48px;
   position: sticky;
-    top: 0px;
-    z-index: 1000;
+  top: 73px;
+  z-index: 1000;
 }
 
 .product-menu {
@@ -212,7 +210,7 @@ body {
   flex-flow: row nowrap;
 }
 
-.menu-item>button {
+.menu-item > button {
   padding: 15px 0;
   background-color: var(--gray-50);
   width: calc(1050px / 4);
@@ -274,7 +272,7 @@ body {
 
 .detail-info__title::before,
 .detail-info__title::after {
-  content: '';
+  content: "";
   flex-grow: 1;
   background-color: var(--gray-100);
   height: 1px;
@@ -297,7 +295,6 @@ body {
   color: var(--content);
   text-align: center;
 }
-
 
 .why-karly__list {
   display: flex;
@@ -382,7 +379,7 @@ dd[class*="__list-title"] {
   white-space: nowrap;
 }
 
-.review__nav>span {
+.review__nav > span {
   float: left;
   margin-right: 860px;
   font-weight: 600;
@@ -400,16 +397,14 @@ dd[class*="__list-title"] {
   background-color: var(--white);
 }
 
-.review__nav button>span {
+.review__nav button > span {
   margin-right: 10px;
   vertical-align: text-top;
-
 }
 
 .review__nav .on-click {
   color: var(--content);
 }
-
 
 .review__table {
   display: flex;
@@ -420,15 +415,15 @@ dd[class*="__list-title"] {
 
 .review__list {
   display: flow-root;
-    white-space: nowrap;
-    width: 100%;
+  white-space: nowrap;
+  width: 100%;
   border-bottom: 1px solid var(--gray-100);
 }
 
 .review__list-button {
   width: 90%;
-    padding: 20px 0 20px 0;
-    text-align: left;
+  padding: 20px 0 20px 0;
+  text-align: left;
   border: 0;
   background-color: var(--white);
   color: var(--content);
@@ -463,7 +458,7 @@ dd[class*="__list-title"] {
   border-bottom: 1px solid var(--gray-100);
 }
 
-.review__list--empty>p {
+.review__list--empty > p {
   margin: 20px 0;
 }
 /* 페이지 버튼 */
@@ -503,14 +498,14 @@ dd[class*="__list-title"] {
   border-bottom: 1px solid var(--black);
 }
 
-.inquiry__nav>span {
+.inquiry__nav > span {
   flex-grow: 1;
   padding: 17px 0;
   font-weight: 600;
   color: var(--content);
 }
 
-.inquiry__nav>span:first-child {
+.inquiry__nav > span:first-child {
   flex-grow: 11;
 }
 
@@ -527,7 +522,7 @@ dd[class*="__list-title"] {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
-    width: 90%;
+  width: 90%;
   height: 100%;
   border: 0;
   background-color: var(--white);
@@ -537,14 +532,14 @@ dd[class*="__list-title"] {
   padding: 20px 0;
 }
 
-.inquiry__list-button>span {
+.inquiry__list-button > span {
   flex-grow: 1;
   text-align: left;
   font-weight: 600;
   color: var(--gray-400);
 }
 
-.inquiry__list-button>span:first-child {
+.inquiry__list-button > span:first-child {
   flex-grow: 8;
   text-align: left;
   text-indent: 20px;
