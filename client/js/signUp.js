@@ -191,4 +191,5 @@ registerBtn.addEventListener("click", () => {
   xhr.open("POST", "http://localhost:3000/users");
   xhr.setRequestHeader("Content-Type", "application/json");
   xhr.send(JSON.stringify(onSubmit()));
+  location.reload();
 });
