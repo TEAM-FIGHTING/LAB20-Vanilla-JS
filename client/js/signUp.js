@@ -1,8 +1,9 @@
-import { xhrData } from "../lib/utils/xhr.js";
+import { tiger } from "../lib/index.js";
 import { getNode, getNodes } from "./../lib/dom/getNode.js";
 
 const node = getNodes(".register-form__input");
 const registerBtn = getNode(".register-form__register-button");
+let genders = getNodes("input[name=gender]")
 
 const idInput = getNode(".id");
 const passwordInput = getNode(".pw");
@@ -119,9 +120,20 @@ const generateRandomString = (num) => {
   return result;
 };
 
-//xhr 오픈
-const xhr = new XMLHttpRequest();
-xhrData.get("http://localhost:3000/users");
+
+// 성별 라디오 감지
+genders.forEach((list)=>list.addEventListener("change",()=>{
+  for(let i = 0; i < genders.length; i++){
+    if(genders[i].checked === true) {
+      genders[i].setAttribute("checked",true)
+    }else{
+      genders[i].removeAttribute("checked")
+    }
+  }
+}))
+
+
+tiger.get("http://localhost:3000/users")
 
 function onSubmit() {
   event.preventDefault();
@@ -138,6 +150,7 @@ function onSubmit() {
   let email = temp[4];
   let phone = temp[5];
   let uniqueId = generateRandomString(10);
+  let gender = getNode("input[name=gender]:checked").value
 
   if (
     id == "" ||
@@ -183,13 +196,11 @@ function onSubmit() {
     email,
     phone,
     uniqueId,
+    gender
   };
   return body;
 }
 
 registerBtn.addEventListener("click", () => {
-  xhr.open("POST", "http://localhost:3000/users");
-  xhr.setRequestHeader("Content-Type", "application/json");
-  xhr.send(JSON.stringify(onSubmit()));
-  location.reload();
-});
+  tiger.post("http://localhost:3000/users",onSubmit())
+  });

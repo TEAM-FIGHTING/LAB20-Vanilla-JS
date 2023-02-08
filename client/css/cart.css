@@ -4,9 +4,10 @@
 @import url(./fonts.css);
 @import url(./theme.css);
 
-body{
+body {
   font-family: "Noto Sans";
 }
+
 .header {}
 
 .cart h2 {
@@ -68,13 +69,91 @@ input[type="checkbox"]:checked+label {
   gap: 50px;
 }
 
-.cart__accordion {
+.cart__chilled-food {
   display: flex;
-  flex-flow: row wrap;
-  position: relative;
+  justify-content: space-between;
+  height: 60px;
+  background: url(../assets/cart/Type=Refrigerated.png) no-repeat 0 50%;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
 }
 
-.cart__chilled-food,
+.cart__chilled-food-text {
+  display: inline-block;
+  margin: 17px 0 0 39px;
+}
+
+.arrow-icon {
+  border: 0;
+  background: #fff;
+}
+
+.cart__body {
+  padding: 20px 0 15px 0;
+}
+
+.cart__item {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000;
+  margin-bottom: 10px;
+}
+
+.cart__item-check {
+  display: flex;
+  position: absolute;
+  padding-top: 25px;
+}
+
+.cart__item-img {
+  padding-left: 35px;
+}
+
+.cart__item-text--name {
+  display: inline-block;
+  transform: translateY(-33px);
+  width: 345px;
+}
+
+.cart__item-countImg {
+  display: inline-block;
+  transform: translateY(-25px);
+}
+
+.cart__item-text--price {
+  display: inline-block;
+  transform: translateY(-33px);
+  width: 127px;
+  text-align: right;
+}
+
+.cart__item-cancelImg {
+  display: inline-block;
+  transform: translateY(-25px);
+}
+
+.cart__frozen-food {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  background: url(../assets/cart/Type=Frozen.png) no-repeat 0 50%;
+  border-bottom: 1px solid #000;
+}
+
+.cart__room-temperature-food {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  background: url(../assets/cart/Type=Normal.png) no-repeat 0 50%;
+  border-bottom: 1px solid #000;
+}
+
+.cart__accordion {
+  /* display: flex;
+  flex-flow: row wrap;
+  position: relative; */
+}
+
+/* .cart__chilled-food,
 .cart__frozen-food,
 .cart__room-temperature-food {
   border-bottom: 2px solid #000;
@@ -117,7 +196,7 @@ input[type="checkbox"]:checked+label {
   background: url(../assets/cart/Food.png) no-repeat 50% 99%;
   position: absolute;
   top: 135px;
-}
+} */
 
 .credit {
   width: 284px;
