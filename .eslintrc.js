@@ -18,7 +18,7 @@ module.exports = {
     // 도달하지 못하는 코드는 사용할 수 없다
     "no-unreachable": ["error"],
     // 선언하지 않은 코드를 사용할 수 없다
-    "no-use-before-define": ["error"],
+    // "no-use-before-define": ["error"],
     // 중첩된 배열 앞뒤에는 공백이 있으면 안된다
     "array-bracket-spacing": ["error", "never"],
     // 중괄호의 스타일을 통일

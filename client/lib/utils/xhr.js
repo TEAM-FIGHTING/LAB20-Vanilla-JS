@@ -18,7 +18,7 @@ export function xhrData({
   // onSuccess = null,
   onFail = null,
   headers = {
-    'Content-Type':'application/json',
+    "Content-Type": "application/json",
     // 'Access-Control-Allow-Origin': '*',
   },
 } = {}) {
@@ -33,15 +33,15 @@ export function xhrData({
   //   xhr.setRequestHeader(key,value);
   // })
 
-  xhr.addEventListener('readystatechange',()=>{
-    const {status,readyState,response} = xhr; // 객체 구조 분해 할당 
+  xhr.addEventListener("readystatechange", () => {
+    const { status, readyState, response } = xhr; // 객체 구조 분해 할당
 
-    if(status >= 200 && status < 400){
-      if(readyState === 4){
-        console.log('통신 성공');
+    if (status >= 200 && status < 400) {
+      if (readyState === 4) {
+        console.log("통신 성공");
         console.log(JSON.parse(response));
-      }  
-    }else{
+      }
+    } else {
       // console.error();
       // onFail("통신 실패");
     }
