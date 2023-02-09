@@ -21,13 +21,13 @@ loginButton.addEventListener("click", (e) => {
     // console.log("있는데이터");
     if (pwValue == userObj.pw) {
       alert("로그인완료");
-      localStorage.setItem("uniqueId", userObj.uniqueId);
+      localStorage.setItem("uniqueId",userObj.uniqueId)
       location.href = 'index.html';
     } else {
       alert("비밀번호를 확인하세요");
     }
   } else {
     e.preventDefault();
-    alert("없는 유저입니다");
+    alert("ID를 확인하세요");
   }
 });
