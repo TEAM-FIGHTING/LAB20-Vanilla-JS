@@ -123,6 +123,11 @@ legend {
   color: var(--primary);
 }
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 .register-form__address-container > label {
   transform: translateY(-50%);
 }

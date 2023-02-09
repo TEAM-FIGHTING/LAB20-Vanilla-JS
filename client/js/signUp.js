@@ -4,6 +4,7 @@ import { getNode, getNodes } from "./../lib/dom/getNode.js";
 const node = getNodes(".register-form__input");
 const registerBtn = getNode(".register-form__register-button");
 let genders = getNodes("input[name=gender]")
+let allCheck = getNode("#full-agree");
 
 const idInput = getNode(".id");
 const passwordInput = getNode(".pw");
@@ -22,6 +23,7 @@ confirmPwInput.addEventListener("keyup", validateConfirmPw);
 nameInput.addEventListener("keyup", validate);
 emailInput.addEventListener("keyup", validateEmail);
 phoneInput.addEventListener("keyup", validate);
+allCheck.addEventListener("change",validate)
 
 function validate() {
   event.preventDefault();
@@ -37,7 +39,8 @@ function validate() {
       confirmPwInput.value &&
       nameInput.value &&
       emailInput.value &&
-      phoneInput.value
+      phoneInput.value &&
+      allCheck.checked == true
     )
   ) {
     registerBtn.disabled = true;
@@ -132,6 +135,17 @@ genders.forEach((list)=>list.addEventListener("change",()=>{
   }
 }))
 
+allCheck.addEventListener("click",()=>{ 
+  let useTermsList = getNodes(".register-form_terms-agree");
+  if(allCheck.checked == true){
+  useTermsList.forEach((terms)=>terms.setAttribute("checked",true))
+  } else if(allCheck.checked == false){
+    useTermsList.forEach((terms)=>terms.removeAttribute("checked"))
+  }
+
+})
+
+
 
 tiger.get("http://localhost:3000/users")
 
@@ -197,10 +211,14 @@ function onSubmit() {
     phone,
     uniqueId,
     gender
-  };
+  };  
+  
+  
   return body;
 }
 
 registerBtn.addEventListener("click", () => {
-  tiger.post("http://localhost:3000/users",onSubmit())
+  tiger.post("http://localhost:3000/users",onSubmit());
+  alert("회원가입 완료")
+  location.href = 'login.html';
   });
