@@ -80,5 +80,25 @@
       },
       "stock": 13
     }
+  ],
+  "users": [
+    {
+      "id": "user1",
+      "pw": "12345678",
+      "confirmPw": "12345678",
+      "name": "user1",
+      "email": "dfsf@sdfsdf.cdsf",
+      "phone": "029302385",
+      "uniqueId": "akeigewngi"
+    },
+    {
+      "id": "user2",
+      "pw": "12345678",
+      "confirmPw": "12345678",
+      "name": "user2",
+      "email": "dfsf@sdfsdf.cds",
+      "phone": "1200007245",
+      "uniqueId": "lgirnbkeig"
+    }
   ]
 }
